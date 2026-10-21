@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis XV Años | Dalyla Alixtzel</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Mariposas y pajaritos decorativos: no bloquean los controles -->
+    <div id="animalesVoladores" class="animales-voladores" aria-hidden="true"></div>
+
+    <!-- =====================================
+         PANTALLA DE BIENVENIDA FLORAL
+    ====================================== -->
+
+    <div id="pantallaSobre" class="pantalla-sobre">
+
+        <!-- Fondo floral inspirado en la referencia -->
+        <div class="fondo-floral-xv" aria-hidden="true"></div>
+
+        <div class="petalos-fondo"></div>
+
+        <div class="encabezado-sobre text-center">
+
+            <!-- La corona dorada está integrada en el fondo floral -->
+
+            <p class="texto-invitacion">
+                ESTÁS INVITADO A MIS
+            </p>
+
+            <h1 class="nombre-sobre">
+                Dalyla Alixtzel
+            </h1>
+
+            <p class="subtitulo-sobre">
+                MIS QUINCE AÑOS
+            </p>
+
+            <div class="adorno-floral">
+                ───── ❀ ─────
+            </div>
+
+        </div>
+
+        <!-- Sobre interactivo -->
+
+        <div class="contenedor-sobre">
+
+            <button
+                type="button"
+                id="abrirSobre"
+                class="sobre"
+                aria-label="Abrir invitación de XV años">
+
+                <span class="sobre-fondo"></span>
+
+                <!-- Carta interior -->
+
+                <span class="carta-interior">
+
+                    <span class="carta-corona">♛</span>
+
+                    <span class="carta-titulo">
+                        Mis XV Años
+                    </span>
+
+                    <span class="carta-nombre">
+                        Dalyla
+                    </span>
+
+                    <span class="carta-fecha">
+                        31 de Octubre de 2026
+                    </span>
+
+                    <span class="carta-corazon">♥</span>
+
+                </span>
+
+                <!-- Solapas del sobre -->
+
+                <span class="sobre-solapa"></span>
+
+                <span class="sobre-lateral-izquierdo"></span>
+
+                <span class="sobre-lateral-derecho"></span>
+
+                <span class="sobre-frontal"></span>
+
+                <!-- Sello floral -->
+
+                <span class="sello-sobre">❀</span>
+
+                <span class="flor-sobre flor-sobre-izquierda" aria-hidden="true"></span>
+
+                <span class="flor-sobre flor-sobre-derecha" aria-hidden="true"></span>
+
+            </button>
+
+        </div>
+
+        <div class="instrucciones-sobre text-center">
+
+            <p>
+                PRESIONA EL SOBRE PARA ABRIRLO
+            </p>
+
+            <i class="bi bi-hand-index"></i>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         REPRODUCTOR DE MÚSICA
+    ====================================== -->
+
+    <audio id="musicaFondo" preload="metadata">
+        <source
+            src="musica/WhatsApp_Audio_convertido.mp3"
+            type="audio/mpeg">
+    </audio>
+<!-- =====================================
+         MENÚ DE NAVEGACIÓN
+    ====================================== -->
+
+    <!-- MENÚ PRINCIPAL ELEGANTE -->
+    <nav class="navbar navbar-light fixed-top navbar-dalyla navbar-dalyla-dropdown" aria-label="Menú principal">
+      <div class="container-fluid px-3 px-xxl-5">
+        <a class="navbar-brand marca-dalyla" href="#inicio"><i class="bi bi-flower1" aria-hidden="true"></i> Mis XV <span class="marca-nombre">Dalyla</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar menú"><i class="bi bi-list" aria-hidden="true"></i><span class="texto-boton-menu"> MENÚ</span></button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#familia">MI FAMILIA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fiesta">LA FIESTA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#historia">MI HISTORIA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">GALERÍA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#regalos">REGALOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#compartirFotos">COMPARTIR FOTOS</a></li>
+            <li class="nav-item"><a class="nav-link nav-confirmar" href="#confirmar"><i class="bi bi-heart-fill me-1" aria-hidden="true"></i> CONFIRMAR</a></li>
+            <li class="nav-item"><a class="nav-link nav-ubicacion" href="https://maps.app.goo.gl/ucoqAbLzLSdSKN8p9?g_st=aw" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i> UBICACIÓN</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- =====================================
+         INICIO
+    ====================================== -->
+
+    <section id="inicio" class="hero-section efecto-revelar">
+
+        <div class="container">
+
+            <div class="hero-invitacion-corona" aria-label="Estás invitado a mis quince años">
+                <span>ESTÁS INVITADO A MIS</span>
+                <strong>XV AÑOS</strong>
+            </div>
+
+            <div class="row align-items-center gy-5">
+
+                <div class="col-lg-6 text-center">
+
+                    <h1 class="hero-title">
+
+                        <span class="hero-name">
+                            Dalyla Alixtzel
+                        </span>
+
+                    </h1>
+
+                    <div class="decoracion">
+                        ───── ❀ ─────
+                    </div>
+
+                    <p class="hero-description">
+
+                        Hay momentos en la vida que imaginamos,
+                        soñamos y esperamos...
+
+                        <br><br>
+
+                        Hoy ese sueño se convierte en realidad.
+
+                        <br><br>
+
+                        Con mucha alegría quiero compartir
+                        contigo este día tan especial.
+
+                    </p>
+
+                    <a href="#confirmar" class="btn btn-rosa">
+
+                        CONFIRMA TU ASISTENCIA
+
+                        <i class="bi bi-heart-fill ms-2"></i>
+
+                    </a>
+
+                    <!-- Reproductor musical estilo XV -->
+                    <div class="reproductor-xv" aria-label="Reproductor de música">
+                        <p class="reproductor-instruccion">Presiona PLAY para reproducir la canción</p>
+                        <div class="barra-musica" id="barraMusica" role="slider" tabindex="0" aria-label="Progreso de la canción">
+                            <div class="progreso-musica" id="progresoMusica"></div>
+                            <span class="punto-musica" id="puntoMusica"></span>
+                        </div>
+                        <div class="tiempos-musica">
+                            <span id="tiempoActual">0:00</span><span id="duracionMusica">0:00</span>
+                        </div>
+                        <div class="controles-musica">
+                            <button type="button" id="botonAleatorio" class="control-musica secundario" aria-label="Modo aleatorio"><i class="bi bi-shuffle"></i></button>
+                            <button type="button" id="botonAnterior" class="control-musica secundario" aria-label="Canción anterior"><i class="bi bi-skip-backward-fill"></i></button>
+                            <button type="button" id="botonMusica" class="control-musica play" aria-label="Reproducir música"><i id="iconoMusica" class="bi bi-play-fill"></i></button>
+                            <button type="button" id="botonSiguiente" class="control-musica secundario" aria-label="Canción siguiente"><i class="bi bi-skip-forward-fill"></i></button>
+                            <button type="button" id="botonRepetir" class="control-musica secundario" aria-label="Repetir canción"><i class="bi bi-repeat"></i></button>
+                        </div>
+                        <p class="nombre-cancion" id="nombreCancion">Canción de los XV</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <div class="foto-principal">
+
+                        <div class="corona">♛</div>
+
+                        <img
+                            src="img/dalyla.jpeg"
+                            alt="Fotografía de Dalyla"
+                            class="img-fluid foto-dalyla">
+
+                        <div class="flores-decorativas floral-recorte" aria-hidden="true"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CUENTA REGRESIVA
+    ====================================== -->
+
+    <section class="countdown-section efecto-revelar">
+
+        <div class="container text-center">
+
+            <h2 class="countdown-title">
+                ♥ FALTAN ♥
+            </h2>
+
+            <div class="row justify-content-center g-3 mt-3">
+
+                <div class="col-6 col-md-3 col-lg-2">
+
+                    <div class="countdown-box">
+
+                        <span id="dias">00</span>
+
+                        <p>DÍAS</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+
+                    <div class="countdown-box">
+
+                        <span id="horas">00</span>
+
+                        <p>HORAS</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+
+                    <div class="countdown-box">
+
+                        <span id="minutos">00</span>
+
+                        <p>MINUTOS</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+
+                    <div class="countdown-box">
+
+                        <span id="segundos">00</span>
+
+                        <p>SEGUNDOS</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p id="mensajeCuenta" class="mt-3"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MIS PADRES Y PADRINOS
+    ====================================== -->
+
+    <section id="familia" class="familia-section efecto-revelar">
+
+        <div class="container text-center">
+
+            <h2 class="section-title">
+                CON LA BENDICIÓN DE DIOS
+            </h2>
+
+            <div class="section-heart">
+                ─── ♥ ───
+            </div>
+
+            <p class="familia-introduccion">
+
+                Con el amor y la bendición de mis padres
+                y padrinos, tengo el honor de invitarte
+                a celebrar mis XV años.
+
+            </p>
+
+            <div class="row justify-content-center g-4 mt-4">
+
+                <!-- Padres -->
+
+                <div class="col-md-6">
+
+                    <div class="familia-card">
+
+                        <div class="familia-icono">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+
+                        <h3>MIS PADRES</h3>
+
+                        <p>
+                            Delmer Alberto Carrillo Che
+                        </p>
+
+                        <div class="familia-corazon">♥</div>
+
+                        <p>
+                            Carime Beatriz Chan Tec
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Padrinos -->
+
+                <div class="col-md-6">
+
+                    <div class="familia-card">
+
+                        <div class="familia-icono">
+                            <i class="bi bi-flower1"></i>
+                        </div>
+
+                        <h3>MIS PADRINOS</h3>
+
+                        <p>
+                            Noemi Ezperanza Caamal Pool
+                        </p>
+
+                        <div class="familia-corazon">♥</div>
+
+                        <p>
+                            Rogaciano Kumul Dzul
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FECHA DEL EVENTO
+    ====================================== -->
+
+    <section class="fecha-section efecto-revelar">
+
+        <div class="container text-center">
+
+            <p class="fecha-subtitulo">
+                TE ESPERO EL DÍA
+            </p>
+
+            <h2 class="fecha-dia">
+                Sábado
+            </h2>
+
+            <div class="fecha-numero">
+                31
+            </div>
+
+            <h2 class="fecha-mes">
+                Octubre 2026
+            </h2>
+
+            <div class="decoracion">
+                ───── ❀ ─────
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CEREMONIA Y RECEPCIÓN
+    ====================================== -->
+
+    <section id="fiesta" class="fiesta-section efecto-revelar">
+
+        <div class="container text-center">
+
+            <h2 class="section-title">
+                LA CELEBRACIÓN
+            </h2>
+
+            <div class="section-heart">
+                ♥
+            </div>
+
+            <div class="row justify-content-center g-4 mt-3">
+
+                <!-- Misa -->
+
+                <div class="col-md-6">
+
+                    <div class="fiesta-card">
+
+                        <div class="icono-circular">
+                            <i class="bi bi-building"></i>
+                        </div>
+
+                        <h3>CEREMONIA RELIGIOSA</h3>
+
+                        <p class="hora-evento">
+                            5:00 PM
+                        </p>
+
+                        <p>
+
+                            Parroquia Nuestra Señora
+                            del Perpetuo Socorro
+
+                            <br>
+
+                            José María Morelos,
+                            Quintana Roo.
+
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Parroquia+Nuestra+Se%C3%B1ora+del+Perpetuo+Socorro+Jose+Maria+Morelos+Quintana+Roo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline-rosa">
+
+                            <i class="bi bi-geo-alt-fill"></i>
+
+                            VER UBICACIÓN
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Recepción -->
+
+                <div class="col-md-6">
+
+                    <div class="fiesta-card">
+
+                        <div class="icono-circular">
+                            <i class="bi bi-house-heart"></i>
+                        </div>
+
+                        <h3>RECEPCIÓN</h3>
+
+                        <p class="hora-evento">
+                            8:30 PM
+                        </p>
+
+                        <p>
+
+                            La celebración será
+                            en mi casa.
+
+                            <br>
+
+                            ¡Te espero para compartir
+                            una noche inolvidable!
+
+                        </p>
+
+                        <a class="btn btn-outline-rosa" href="https://maps.app.goo.gl/ucoqAbLzLSdSKN8p9?g_st=aw" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill me-2"></i> VER UBICACIÓN DE LA CASA</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CÓDIGO DE VESTIMENTA
+    ====================================== -->
+
+    <section class="vestimenta-section efecto-revelar">
+
+        <div class="container text-center">
+
+            <h2 class="section-title">
+                CÓDIGO DE VESTIMENTA
+            </h2>
+
+            <div class="section-heart">
+                ♥
+            </div>
+
+            <div class="icono-vestimenta">
+                <i class="bi bi-person-standing-dress"></i>
+            </div>
+
+            <h3>Formal</h3>
+
+            <p>
+                Queremos que luzcas increíble
+                en esta noche tan especial.
+            </p>
+
+            <p class="vestimenta-aviso">
+
+                Los siguientes colores están
+                reservados para la quinceañera.
+
+                <br>
+
+                Por favor, evita utilizarlos
+                en tu vestimenta.
+
+            </p>
+
+            <div class="colores-vestimenta">
+
+                <div class="color-item">
+
+                    <span class="color color-rosado"></span>
+
+                    <p>ROSADO</p>
+
+                </div>
+
+                <div class="color-item">
+
+                    <span class="color color-dorado"></span>
+
+                    <p>DORADO</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MI HISTORIA
+    ====================================== -->
+
+    <section id="historia" class="historia-section efecto-revelar">
+
+        <div class="container">
+
+            <div class="row align-items-center gy-4">
+
+                <div class="col-md-6 text-center">
+
+                    <div class="foto-historia">
+
+                        <img
+                            src="img/galeria4.jpeg"
+                            alt="Fotografía de la infancia de Dalyla"
+                            class="img-fluid">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 text-center">
+
+                    <h2 class="historia-title">
+                        MI HISTORIA
+                    </h2>
+
+                    <div class="historia-corazon">
+                        ─── ♥ ───
+                    </div>
+
+                    <p class="historia-texto">
+
+                        Quince años llenos de momentos
+                        inolvidables, aprendizajes,
+                        risas y personas que han hecho
+                        este camino especial.
+
+                    </p>
+
+                    <p class="historia-frase">
+
+                        ¡Gracias por ser parte
+                        de mi historia!
+
+                    </p>
+
+                    <button
+                        class="btn btn-historia"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#historiaCompleta"
+                        aria-expanded="false"
+                        aria-controls="historiaCompleta">
+
+                        VER MÁS
+
+                        <i class="bi bi-heart-fill ms-2"></i>
+
+                    </button>
+
+                    <div
+                        class="collapse mt-4"
+                        id="historiaCompleta">
+
+                        <p>
+
+                            Hoy comienza una nueva etapa
+                            de mi vida y quiero compartir
+                            esta felicidad con todas las
+                            personas que forman parte
+                            de mi historia.
+
+                            <br><br>
+
+                            ¡Gracias por acompañarme
+                            en mis XV años!
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         GALERÍA Y CONFIRMACIÓN
+    ====================================== -->
+
+    <section class="galeria-confirmacion-section efecto-revelar">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- Galería -->
+
+                <div class="col-lg-6" id="galeria">
+
+                    <div class="text-center">
+
+                        <h2 class="section-title">
+                            GALERÍA
+                        </h2>
+
+                        <div class="section-heart">
+                            ♥
+                        </div>
+
+                    </div>
+
+                    <div class="row g-2 mt-3">
+
+                        <div class="col-4">
+
+                            <img
+                                src="img/galeria1.jpeg"
+                                alt="Fotografía de Dalyla"
+                                class="img-fluid galeria-img"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalGaleria"
+                                data-imagen="img/galeria1.jpeg">
+
+                        </div>
+
+                        <div class="col-4">
+
+                            <img
+                                src="img/galeria2.jpeg"
+                                alt="Fotografía de Dalyla"
+                                class="img-fluid galeria-img"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalGaleria"
+                                data-imagen="img/galeria2.jpeg">
+
+                        </div>
+
+                        <div class="col-4">
+
+                            <img
+                                src="img/galeria3.jpeg"
+                                alt="Fotografía de Dalyla"
+                                class="img-fluid galeria-img"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalGaleria"
+                                data-imagen="img/galeria3.jpeg">
+
+                        </div>
+
+                        <div class="col-4">
+
+                            <img
+                                src="img/galeria4.jpeg"
+                                alt="Fotografía de Dalyla"
+                                class="img-fluid galeria-img"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalGaleria"
+                                data-imagen="img/galeria4.jpeg">
+
+                        </div>
+
+                        <div class="col-4">
+
+                            <img
+                                src="img/dalyla.jpeg"
+                                alt="Fotografía de Dalyla"
+                                class="img-fluid galeria-img"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalGaleria"
+                                data-imagen="img/dalyla.jpeg">
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <button
+                            class="btn btn-outline-rosa"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria">
+
+                            VER TODA LA GALERÍA
+
+                            <i class="bi bi-heart-fill ms-2"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Confirmación -->
+
+                <div class="col-lg-6" id="confirmar">
+
+                    <div class="text-center">
+
+                        <h2 class="section-title">
+                            CONFIRMA TU ASISTENCIA
+                        </h2>
+
+                        <div class="section-heart">
+                            ♥
+                        </div>
+
+                        <p class="confirmacion-texto">
+
+                            Tu presencia es muy importante
+                            para mí.
+
+                            <br>
+
+                            Por favor, confirma tu asistencia.
+
+                        </p>
+
+                    </div>
+
+                    <form
+                        id="formConfirmacion"
+                        class="form-confirmacion">
+
+                        <div class="mb-3">
+
+                            <label
+                                for="nombre"
+                                class="form-label">
+
+                                Nombre completo
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Nombre completo"
+                                maxlength="100"
+                                required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label
+                                for="acompanantes"
+                                class="form-label">
+
+                                Número de acompañantes
+
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="acompanantes"
+                                name="acompanantes"
+                                required>
+
+                                <option
+                                    value=""
+                                    selected
+                                    disabled>
+
+                                    Número de acompañantes
+
+                                </option>
+
+                                <option value="0">
+                                    Sin acompañantes
+                                </option>
+
+                                <option value="1">
+                                    1 acompañante
+                                </option>
+
+                                <option value="2">
+                                    2 acompañantes
+                                </option>
+
+                                <option value="3">
+                                    3 acompañantes
+                                </option>
+
+                                <option value="4">
+                                    4 acompañantes
+                                </option>
+                                <option value="5">5 acompañantes</option>
+                                <option value="6">6 acompañantes</option>
+                                <option value="7">7 acompañantes</option>
+                                <option value="8">8 acompañantes</option>
+                                <option value="9">9 acompañantes</option>
+                                <option value="10">10 acompañantes</option>
+
+
+                            </select>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefonoConfirmacion" class="form-label">Enviar confirmación a</label>
+                            <select id="telefonoConfirmacion" class="form-select" required>
+                                <option value="529841375523">WhatsApp 1: 984 137 5523</option>
+                                <option value="529841678167">WhatsApp 2: 984 167 8167</option>
+                            </select>
+                        </div>
+                        <button
+                            type="submit"
+                            class="btn btn-rosa w-100">
+
+                            <i class="bi bi-whatsapp me-2"></i>
+
+                            CONFIRMAR POR WHATSAPP
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MODAL DE GALERÍA
+    ====================================== -->
+
+    <div
+        class="modal fade"
+        id="modalGaleria"
+        tabindex="-1"
+        aria-labelledby="tituloModalGaleria"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5
+                        class="modal-title"
+                        id="tituloModalGaleria">
+
+                        Galería de Dalyla
+
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img
+                        src="img/galeria1.jpg"
+                        id="imagenModal"
+                        class="img-fluid rounded"
+                        alt="Fotografía seleccionada">
+
+                    <div class="mt-3">
+
+                        <button
+                            type="button"
+                            class="btn btn-outline-rosa"
+                            id="anteriorImagen">
+
+                            <i class="bi bi-chevron-left"></i>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn btn-outline-rosa"
+                            id="siguienteImagen">
+
+                            <i class="bi bi-chevron-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         PIE DE PÁGINA
+    ====================================== -->
+
+
+    <!-- =====================================
+         MESA DE REGALOS / LLUVIA DE SOBRES
+    ====================================== -->
+    <section id="regalos" class="regalos-xv-section efecto-revelar" aria-labelledby="tituloRegalos">
+        <div class="container">
+            <div class="regalos-xv-tarjeta text-center">
+                <div class="regalos-rosas regalos-rosas-superior" aria-hidden="true"></div>
+                <div class="regalos-rosas regalos-rosas-inferior" aria-hidden="true"></div>
+                <div class="regalos-xv-interior">
+                    <h2 id="tituloRegalos" class="regalos-xv-titulo">Mesa de Regalos</h2>
+                    <p class="regalos-xv-intro">Tu presencia es mi mejor regalo, pero si deseas hacerme un obsequio, puedo sugerirte:</p>
+                    <div class="regalos-xv-icono" aria-hidden="true"><i class="bi bi-envelope-fill"></i></div>
+                    <h3 class="regalos-xv-subtitulo">Lluvia de sobres</h3>
+                    <p class="regalos-xv-descripcion">La lluvia de sobres es la tradición de regalar dinero en efectivo en un sobre el día del evento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================
+         COMPARTE TUS FOTOS
+    ====================================== -->
+    <section id="compartirFotos" class="compartir-fotos-xv-section efecto-revelar">
+        <div class="compartir-fotos-xv-fondo" aria-hidden="true"></div>
+        <div class="container compartir-fotos-xv-contenido text-center">
+            <h2>Comparte tus fotos</h2>
+            <p class="compartir-fotos-xv-subtitulo">Ayúdame a crear recuerdos inolvidables</p>
+            <div class="compartir-fotos-xv-camara" aria-hidden="true"><i class="bi bi-camera"></i></div>
+            <p class="compartir-fotos-xv-descripcion">Por favor, comparte con nosotros los momentos
+               que captures con tu celular durante mis XV años a través del siguiente enlace.</p>
+            <div class="foto-contactos-xv">
+                <a class="compartir-fotos-xv-boton" href="https://wa.me/529841375523?text=Hola%2C%20quiero%20compartir%20fotos%20de%20los%20XV%20a%C3%B1os%20de%20Dalyla." target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> ENVIAR FOTOS POR WHATSAPP</a>
+                <span class="foto-contacto-numero">984 137 5523</span>
+                <a id="enlaceSubirFotos" class="compartir-fotos-xv-boton enlace-forms-pendiente" href="#compartirFotos" aria-describedby="mensajeSubirFotos"><i class="bi bi-file-earmark-arrow-up"></i> GOOGLE FORMS (RESPALDO)</a>
+            </div>
+            <p id="mensajeSubirFotos" class="compartir-fotos-xv-aviso" role="status" aria-live="polite">Para enviar fotos por WhatsApp, adjúntalas en la conversación. El formulario de respaldo estará disponible cuando se agregue su enlace.</p>
+        </div>
+    </section>
+
+    <footer class="footer-section" id="despedida" aria-label="Mensaje final de agradecimiento">
+        <div class="container despedida-contenedor">
+            <div class="despedida-tarjeta" data-reveal>
+                <div class="despedida-ornamento" aria-hidden="true"><i class="bi bi-stars"></i></div>
+                <div class="despedida-corona" aria-hidden="true"><i class="bi bi-gem"></i></div>
+                <p class="despedida-intro">GRACIAS POR SER PARTE DE ESTE DÍA TAN ESPECIAL</p>
+                <div class="despedida-separador" aria-hidden="true">✦ ♥ ✦</div>
+                <h2 class="despedida-nombre">Dalyla Alixtzel</h2>
+                <h3 class="despedida-subtitulo">Mis XV Años</h3>
+                <p class="despedida-fecha">Sábado 31 de octubre de 2026</p>
+                <p class="despedida-mensaje">Cada sonrisa, cada abrazo y cada momento compartido harán de esta noche un recuerdo inolvidable.</p>
+                <div class="despedida-flores" aria-hidden="true">✿ &nbsp; ❀ &nbsp; ✿</div>
+                <a class="despedida-volver" href="#" id="despedidaVolver"><i class="bi bi-arrow-up-circle" aria-hidden="true"></i> Volver al inicio</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Indicador de avance de la invitación -->
+    <div class="progreso-invitacion" aria-hidden="true"><span id="progresoInvitacion"></span></div>
+    <button id="volverArriba" class="volver-arriba" type="button" aria-label="Volver al inicio"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JavaScript externo -->
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

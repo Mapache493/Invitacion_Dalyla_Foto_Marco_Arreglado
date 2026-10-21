@@ -1,0 +1,4682 @@
+
+
+/* =====================================
+
+   CONFIGURACIÓN GENERAL
+
+===================================== */
+
+
+
+:root {
+
+    --rosa: #d58a9d;
+
+    --rosa-oscuro: #b9677e;
+
+    --rosa-claro: #fff0f3;
+
+    --dorado: #b99768;
+
+    --blanco: #fffaf8;
+
+    --texto: #4d4145;
+
+}
+
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 90px;
+
+}
+
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+    color: var(--texto);
+
+    background: var(--blanco);
+
+    padding-top: 80px;
+
+}
+
+
+
+.section-title {
+
+    font-family: 'Playfair Display', serif;
+
+    color: var(--dorado);
+
+    font-size: 30px;
+
+}
+
+
+
+.section-heart {
+
+    color: var(--rosa);
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   MENÚ DE NAVEGACIÓN
+
+===================================== */
+
+
+
+.navbar {
+
+    background: rgba(255, 250, 249, 0.97);
+
+    min-height: 80px;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+
+}
+
+
+
+.navbar-brand {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 38px;
+
+    color: var(--dorado);
+
+}
+
+
+
+.navbar-brand:hover {
+
+    color: var(--rosa);
+
+}
+
+
+
+.nav-link {
+
+    color: var(--texto);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    margin: 0 9px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.nav-link:hover {
+
+    color: var(--rosa) !important;
+
+}
+
+
+
+
+
+/* =====================================
+
+   INICIO
+
+===================================== */
+
+
+
+.hero-section {
+
+    min-height: 540px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px 0;
+
+
+
+    background:
+
+        radial-gradient(
+
+            circle at 10% 20%,
+
+            #f8dce2,
+
+            transparent 35%
+
+        ),
+
+        radial-gradient(
+
+            circle at 90% 80%,
+
+            #f5d2da,
+
+            transparent 35%
+
+        ),
+
+        #fffaf9;
+
+}
+
+
+
+.hero-subtitle {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 21px;
+
+    color: var(--dorado);
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.hero-title {
+
+    line-height: 1;
+
+}
+
+
+
+.hero-xv {
+
+    display: block;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 95px;
+
+    color: var(--dorado);
+
+}
+
+
+
+.hero-name {
+
+    display: block;
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: clamp(65px, 8vw, 105px);
+
+    color: var(--rosa-oscuro);
+
+    margin-top: 5px;
+
+}
+
+
+
+.decoracion {
+
+    color: var(--dorado);
+
+    font-size: 22px;
+
+    margin: 15px 0;
+
+}
+
+
+
+.hero-description {
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   BOTONES
+
+===================================== */
+
+
+
+.btn-rosa {
+
+    background: var(--rosa);
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 11px 28px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    border: 1px solid var(--rosa);
+
+    transition: 0.3s;
+
+}
+
+
+
+.btn-rosa:hover {
+
+    background: var(--rosa-oscuro);
+
+    border-color: var(--rosa-oscuro);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+
+.btn-outline-rosa {
+
+    border: 1px solid var(--rosa);
+
+    color: var(--rosa-oscuro);
+
+    border-radius: 30px;
+
+    padding: 8px 22px;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.btn-outline-rosa:hover {
+
+    background: var(--rosa);
+
+    color: white;
+
+}
+
+
+
+
+
+/* =====================================
+
+   FOTOGRAFÍA PRINCIPAL
+
+===================================== */
+
+
+
+.foto-principal {
+
+    position: relative;
+
+    width: 350px;
+
+    height: 390px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    padding: 9px;
+
+
+
+    border: 3px solid var(--dorado);
+
+    border-radius: 50% 50% 45% 45%;
+
+
+
+    box-shadow: 0 0 0 6px #fff6f4;
+
+}
+
+
+
+.foto-dalyla {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50% 50% 44% 44%;
+
+}
+
+
+
+.corona {
+
+    position: absolute;
+
+    top: -55px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 55px;
+
+    color: var(--dorado);
+
+}
+
+
+
+.flores-decorativas {
+
+    position: absolute;
+
+    bottom: -35px;
+
+    right: -30px;
+
+    font-size: 75px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   CUENTA REGRESIVA
+
+===================================== */
+
+
+
+.countdown-section {
+
+    background: linear-gradient(
+
+        100deg,
+
+        #fce4e7,
+
+        #fff1ef,
+
+        #f8dce2
+
+    );
+
+
+
+    padding: 30px 0;
+
+}
+
+
+
+.countdown-title {
+
+    font-family: 'Playfair Display', serif;
+
+    color: var(--dorado);
+
+    font-size: 25px;
+
+}
+
+
+
+.countdown-box {
+
+    border: 1px solid #e9c3cb;
+
+    border-radius: 7px;
+
+    padding: 10px;
+
+}
+
+
+
+.countdown-box span {
+
+    display: block;
+
+    font-family: 'Playfair Display', serif;
+
+    color: var(--rosa-oscuro);
+
+    font-size: 45px;
+
+    line-height: 1.2;
+
+}
+
+
+
+.countdown-box p {
+
+    margin: 0;
+
+    font-size: 11px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   MIS PADRES Y PADRINOS
+
+===================================== */
+
+
+
+.familia-section {
+
+    padding: 60px 0;
+
+    background: #fffaf9;
+
+}
+
+
+
+.familia-introduccion {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+}
+
+
+
+.familia-card {
+
+    height: 100%;
+
+    padding: 35px 20px;
+
+    border-radius: 15px;
+
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #fff5f6,
+
+        #ffe6eb
+
+    );
+
+
+
+    border: 1px solid #f0d3da;
+
+
+
+    box-shadow:
+
+        0 5px 20px rgba(185, 103, 126, 0.08);
+
+}
+
+
+
+.familia-icono {
+
+    font-size: 28px;
+
+    color: var(--rosa);
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.familia-card h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 22px;
+
+    color: var(--dorado);
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.familia-card p {
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+
+.familia-corazon {
+
+    color: var(--rosa);
+
+    margin: 15px 0;
+
+}
+
+
+
+
+
+/* =====================================
+
+   FECHA
+
+===================================== */
+
+
+
+.fecha-section {
+
+    padding: 55px 0;
+
+
+
+    background: linear-gradient(
+
+        120deg,
+
+        #f8dce2,
+
+        #fff4f4,
+
+        #f7d5de
+
+    );
+
+}
+
+
+
+.fecha-subtitulo {
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: var(--dorado);
+
+}
+
+
+
+.fecha-dia {
+
+    font-family: 'Playfair Display', serif;
+
+    color: var(--rosa-oscuro);
+
+    font-size: 30px;
+
+}
+
+
+
+.fecha-numero {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 100px;
+
+    line-height: 1.2;
+
+    color: var(--dorado);
+
+}
+
+
+
+.fecha-mes {
+
+    font-family: 'Playfair Display', serif;
+
+    color: var(--rosa-oscuro);
+
+    font-size: 30px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   CEREMONIA Y RECEPCIÓN
+
+===================================== */
+
+
+
+.fiesta-section {
+
+    padding: 55px 0;
+
+    background: #fffaf9;
+
+}
+
+
+
+.fiesta-card {
+
+    height: 100%;
+
+    padding: 35px 25px;
+
+    border: 1px solid #f0d3da;
+
+    border-radius: 15px;
+
+    background: #fff5f6;
+
+}
+
+
+
+.fiesta-card h3 {
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-top: 15px;
+
+    color: var(--dorado);
+
+}
+
+
+
+.fiesta-card p {
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+
+
+.icono-circular {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: auto;
+
+
+
+    background: #f9dce1;
+
+    color: var(--rosa-oscuro);
+
+
+
+    border-radius: 50%;
+
+    font-size: 30px;
+
+}
+
+
+
+.hora-evento {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 28px !important;
+
+    color: var(--rosa-oscuro);
+
+}
+
+
+
+.ubicacion-pendiente {
+
+    display: inline-block;
+
+    color: var(--rosa-oscuro);
+
+    font-size: 12px;
+
+    padding: 10px 20px;
+
+    border: 1px dashed var(--rosa);
+
+    border-radius: 25px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   CÓDIGO DE VESTIMENTA
+
+===================================== */
+
+
+
+.vestimenta-section {
+
+    padding: 55px 0;
+
+
+
+    background: linear-gradient(
+
+        120deg,
+
+        #fff0f3,
+
+        #fbe0e7
+
+    );
+
+}
+
+
+
+.icono-vestimenta {
+
+    font-size: 45px;
+
+    color: var(--rosa-oscuro);
+
+}
+
+
+
+.vestimenta-section h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    color: var(--dorado);
+
+    margin: 15px 0;
+
+}
+
+
+
+.vestimenta-aviso {
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-top: 20px;
+
+}
+
+
+
+.colores-vestimenta {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: 25px;
+
+}
+
+
+
+.color-item {
+
+    text-align: center;
+
+}
+
+
+
+.color-item p {
+
+    font-size: 12px;
+
+    margin-top: 10px;
+
+}
+
+
+
+.color {
+
+    display: block;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    border: 3px solid white;
+
+    box-shadow: 0 3px 10px #0001;
+
+}
+
+
+
+.color-rosado {
+
+    background: #f4b5c5;
+
+}
+
+
+
+.color-dorado {
+
+    background: #d4af37;
+
+}
+
+
+
+
+
+/* =====================================
+
+   MI HISTORIA
+
+===================================== */
+
+
+
+.historia-section {
+
+    background: linear-gradient(
+
+        120deg,
+
+        #b97886,
+
+        #bd8993,
+
+        #a96376
+
+    );
+
+
+
+    padding: 55px 0;
+
+    color: white;
+
+}
+
+
+
+.foto-historia {
+
+    background: white;
+
+    padding: 10px 10px 25px;
+
+    width: 260px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+
+
+    transform: rotate(-6deg);
+
+
+
+    box-shadow:
+
+        0 5px 18px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.foto-historia img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+}
+
+
+
+.historia-title {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 30px;
+
+}
+
+
+
+.historia-corazon {
+
+    margin: 10px 0 20px;
+
+}
+
+
+
+.historia-texto {
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+}
+
+
+
+.historia-frase {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 29px;
+
+}
+
+
+
+.btn-historia {
+
+    border: 1px solid white;
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 8px 25px;
+
+    font-size: 12px;
+
+}
+
+
+
+.btn-historia:hover {
+
+    background: white;
+
+    color: var(--rosa-oscuro);
+
+}
+
+
+
+
+
+/* =====================================
+
+   GALERÍA Y CONFIRMACIÓN
+
+===================================== */
+
+
+
+.galeria-confirmacion-section {
+
+    padding: 55px 0;
+
+    background: #fffaf9;
+
+}
+
+
+
+.galeria-img {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    border-radius: 7px;
+
+}
+
+
+
+.galeria-img:hover {
+
+    transform: scale(1.04);
+
+    opacity: 0.85;
+
+}
+
+
+
+#imagenModal {
+
+    max-height: 65vh;
+
+    object-fit: contain;
+
+}
+
+
+
+.confirmacion-texto {
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+
+.form-confirmacion {
+
+    max-width: 350px;
+
+    margin: auto;
+
+}
+
+
+
+.form-label {
+
+    font-size: 12px;
+
+}
+
+
+
+.form-control,
+
+.form-select {
+
+    border: 1px solid #e5c1c8;
+
+    background: transparent;
+
+    font-size: 13px;
+
+    padding: 11px;
+
+}
+
+
+
+.form-control:focus,
+
+.form-select:focus {
+
+    border-color: var(--rosa);
+
+    box-shadow:
+
+        0 0 0 0.2rem rgba(189, 107, 126, 0.15);
+
+}
+
+
+
+
+
+/* =====================================
+
+   PIE DE PÁGINA
+
+===================================== */
+
+
+
+.footer-section {
+
+    background: #fbe8e9;
+
+    padding: 30px 0;
+
+    color: var(--dorado);
+
+}
+
+
+
+.footer-section p {
+
+    font-size: 12px;
+
+}
+
+
+
+.footer-corazon {
+
+    color: var(--rosa);
+
+}
+
+
+
+.footer-section h2 {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 45px;
+
+    color: var(--rosa);
+
+}
+
+
+
+.footer-fecha {
+
+    margin-bottom: 0;
+
+}
+
+
+
+
+
+/* =====================================
+
+   PANTALLA DE BIENVENIDA FLORAL
+
+===================================== */
+
+
+
+.pantalla-sobre {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-evenly;
+
+
+
+    overflow: hidden;
+
+
+
+    background:
+
+        radial-gradient(
+
+            circle at 15% 20%,
+
+            #f8d4df,
+
+            transparent 35%
+
+        ),
+
+        radial-gradient(
+
+            circle at 85% 80%,
+
+            #f6cbd7,
+
+            transparent 35%
+
+        ),
+
+        linear-gradient(
+
+            135deg,
+
+            #fff9f8,
+
+            #ffe8ee,
+
+            #fff5f5
+
+        );
+
+
+
+    transition:
+
+        opacity 1s ease,
+
+        visibility 1s ease;
+
+}
+
+
+
+.pantalla-sobre.ocultar {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+}
+
+
+
+
+
+/* =====================================
+
+   FLORES DECORATIVAS
+
+===================================== */
+
+
+
+.flores-esquina {
+
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 65px;
+
+    opacity: 0.75;
+
+    pointer-events: none;
+
+}
+
+
+
+.flores-superior {
+
+    top: -20px;
+
+    left: -25px;
+
+    transform: rotate(-25deg);
+
+}
+
+
+
+.flores-inferior {
+
+    bottom: -20px;
+
+    right: -25px;
+
+    transform: rotate(155deg);
+
+}
+
+
+
+.flores-esquina span {
+
+    display: inline-block;
+
+    animation:
+
+        floresMovimiento 5s ease-in-out infinite;
+
+}
+
+
+
+@keyframes floresMovimiento {
+
+
+
+    0%, 100% {
+
+        transform: rotate(-5deg);
+
+    }
+
+
+
+    50% {
+
+        transform: rotate(8deg);
+
+    }
+
+
+
+}
+
+
+
+
+
+/* =====================================
+
+   PÉTALOS DE FONDO
+
+===================================== */
+
+
+
+.petalos-fondo {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+
+
+    background-image:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(220, 145, 165, 0.35) 2px,
+
+            transparent 3px
+
+        ),
+
+        radial-gradient(
+
+            circle,
+
+            rgba(255, 255, 255, 0.8) 3px,
+
+            transparent 4px
+
+        );
+
+
+
+    background-size:
+
+        90px 110px,
+
+        150px 130px;
+
+
+
+    animation:
+
+        petalosMovimiento 15s linear infinite;
+
+}
+
+
+
+@keyframes petalosMovimiento {
+
+
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+
+
+    to {
+
+        background-position: 100px 300px;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* =====================================
+
+   ENCABEZADO DEL SOBRE
+
+===================================== */
+
+
+
+.encabezado-sobre {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 0 15px;
+
+}
+
+
+
+.corona-floral {
+
+    font-size: 35px;
+
+    color: var(--dorado);
+
+}
+
+
+
+.texto-invitacion {
+
+    font-family: 'Playfair Display', serif;
+
+    color: var(--dorado);
+
+    font-size: 15px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 0;
+
+}
+
+
+
+.nombre-sobre {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: clamp(65px, 10vw, 125px);
+
+    font-weight: normal;
+
+    color: var(--rosa-oscuro);
+
+    line-height: 1.1;
+
+    margin: 0;
+
+
+
+    text-shadow:
+
+        2px 3px 8px rgba(185, 103, 126, 0.15);
+
+}
+
+
+
+.subtitulo-sobre {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(16px, 3vw, 24px);
+
+    color: var(--dorado);
+
+    letter-spacing: 5px;
+
+    margin: 0;
+
+}
+
+
+
+.adorno-floral {
+
+    color: var(--rosa);
+
+    font-size: 20px;
+
+    margin-top: 5px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   CONTENEDOR DEL SOBRE
+
+===================================== */
+
+
+
+.contenedor-sobre {
+
+    position: relative;
+
+    z-index: 3;
+
+
+
+    width: min(85vw, 550px);
+
+    aspect-ratio: 1.65;
+
+
+
+    perspective: 1200px;
+
+
+
+    filter:
+
+        drop-shadow(
+
+            0 15px 20px rgba(166, 92, 112, 0.25)
+
+        );
+
+}
+
+
+
+.sobre {
+
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+
+    transition: transform 0.4s ease;
+
+}
+
+
+
+.sobre:not(.abierto):hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+.sobre:focus-visible {
+
+    outline: 3px solid var(--rosa-oscuro);
+
+    outline-offset: 8px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   PARTES DEL SOBRE
+
+===================================== */
+
+
+
+.sobre-fondo {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #e9aab9;
+
+    border-radius: 6px;
+
+}
+
+
+
+.carta-interior {
+
+    position: absolute;
+
+    top: 5%;
+
+    left: 8%;
+
+    width: 84%;
+
+    height: 90%;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #fffdfb,
+
+        #fff0f3
+
+    );
+
+
+
+    border: 2px solid var(--dorado);
+
+    border-radius: 5px;
+
+
+
+    box-shadow:
+
+        0 2px 12px rgba(0, 0, 0, 0.12);
+
+
+
+    z-index: 2;
+
+
+
+    transition:
+
+        transform 1.3s ease,
+
+        box-shadow 1.3s ease;
+
+}
+
+
+
+.carta-corona {
+
+    font-size: 35px;
+
+    color: var(--dorado);
+
+}
+
+
+
+.carta-titulo {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(14px, 3vw, 22px);
+
+    color: var(--dorado);
+
+}
+
+
+
+.carta-nombre {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: clamp(40px, 7vw, 65px);
+
+    color: var(--rosa-oscuro);
+
+}
+
+
+
+.carta-fecha {
+
+    font-size: clamp(9px, 2vw, 13px);
+
+    color: #9b7880;
+
+}
+
+
+
+.carta-corazon {
+
+    color: var(--rosa);
+
+    font-size: 20px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   SOLAPAS
+
+===================================== */
+
+
+
+.sobre-solapa {
+
+    position: absolute;
+
+    inset: 0;
+
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #ffe4ea,
+
+        #f5b8c7
+
+    );
+
+
+
+    clip-path: polygon(
+
+        0 0,
+
+        100% 0,
+
+        50% 62%
+
+    );
+
+
+
+    transform-origin: top center;
+
+    z-index: 7;
+
+
+
+    transition: transform 1s ease;
+
+}
+
+
+
+.sobre-lateral-izquierdo {
+
+    position: absolute;
+
+    inset: 0;
+
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #ffdae3,
+
+        #f2b2c1
+
+    );
+
+
+
+    clip-path: polygon(
+
+        0 0,
+
+        55% 55%,
+
+        0 100%
+
+    );
+
+
+
+    z-index: 5;
+
+}
+
+
+
+.sobre-lateral-derecho {
+
+    position: absolute;
+
+    inset: 0;
+
+
+
+    background: linear-gradient(
+
+        225deg,
+
+        #ffd6e0,
+
+        #eba6b7
+
+    );
+
+
+
+    clip-path: polygon(
+
+        100% 0,
+
+        45% 55%,
+
+        100% 100%
+
+    );
+
+
+
+    z-index: 5;
+
+}
+
+
+
+.sobre-frontal {
+
+    position: absolute;
+
+    inset: 0;
+
+
+
+    background: linear-gradient(
+
+        180deg,
+
+        #ffe1e8,
+
+        #f5b7c5
+
+    );
+
+
+
+    clip-path: polygon(
+
+        0 100%,
+
+        50% 43%,
+
+        100% 100%
+
+    );
+
+
+
+    z-index: 6;
+
+
+
+    border-radius: 0 0 6px 6px;
+
+}
+
+
+
+
+
+/* =====================================
+
+   SELLO Y FLORES DEL SOBRE
+
+===================================== */
+
+
+
+.sello-sobre {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+
+
+    transform: translate(-50%, -50%);
+
+
+
+    width: 70px;
+
+    height: 70px;
+
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    border-radius: 50%;
+
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #f9e4e9,
+
+        #d78fa3
+
+    );
+
+
+
+    border: 4px solid #fff4f5;
+
+
+
+    box-shadow:
+
+        0 0 0 3px #dba0ae,
+
+        0 5px 12px rgba(0, 0, 0, 0.2);
+
+
+
+    font-size: 38px;
+
+    color: white;
+
+
+
+    z-index: 8;
+
+
+
+    transition:
+
+        opacity 0.4s ease,
+
+        transform 0.5s ease;
+
+}
+
+
+
+.flor-sobre {
+
+    position: absolute;
+
+    font-size: 65px;
+
+    z-index: 6;
+
+    pointer-events: none;
+
+}
+
+
+
+.flor-sobre-izquierda {
+
+    bottom: -25px;
+
+    left: -25px;
+
+    transform: rotate(-25deg);
+
+}
+
+
+
+.flor-sobre-derecha {
+
+    bottom: -25px;
+
+    right: -25px;
+
+    transform: rotate(25deg);
+
+}
+
+
+
+
+
+/* =====================================
+
+   ANIMACIÓN DEL SOBRE
+
+===================================== */
+
+
+
+.sobre.abierto {
+
+    cursor: default;
+
+}
+
+
+
+.sobre.abierto .sello-sobre {
+
+    opacity: 0;
+
+
+
+    transform:
+
+        translate(-50%, -50%)
+
+        scale(0.3);
+
+}
+
+
+
+.sobre.abierto .sobre-solapa {
+
+    transform: rotateX(180deg);
+
+    z-index: 1;
+
+}
+
+
+
+.sobre.abierto .carta-interior {
+
+    transform: translateY(-65%);
+
+
+
+    box-shadow:
+
+        0 15px 25px rgba(0, 0, 0, 0.2);
+
+
+
+    transition-delay: 0.65s;
+
+}
+
+
+
+
+
+/* =====================================
+
+   INSTRUCCIONES DEL SOBRE
+
+===================================== */
+
+
+
+.instrucciones-sobre {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: var(--rosa-oscuro);
+
+    letter-spacing: 3px;
+
+    font-size: clamp(11px, 2vw, 16px);
+
+}
+
+
+
+.instrucciones-sobre i {
+
+    display: block;
+
+    font-size: 28px;
+
+    margin-top: 12px;
+
+
+
+    animation: manoAnimada 1.5s infinite;
+
+}
+
+
+
+@keyframes manoAnimada {
+
+
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+
+
+}
+
+
+
+
+
+/* =====================================
+
+   ANIMACIÓN DE CIERRE DE PANTALLA
+
+===================================== */
+
+
+
+.pantalla-sobre.ocultar {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+}
+
+
+
+
+
+/* =====================================
+
+   BOTÓN FLOTANTE DE MÚSICA
+
+===================================== */
+
+
+
+.boton-musica {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+
+
+    width: 55px;
+
+    height: 55px;
+
+
+
+    border: none;
+
+    border-radius: 50%;
+
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #e7a4b5,
+
+        #b9677e
+
+    );
+
+
+
+    color: white;
+
+    font-size: 24px;
+
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    box-shadow:
+
+        0 5px 15px rgba(185, 103, 126, 0.3);
+
+
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+
+
+    transition: 0.3s;
+
+}
+
+
+
+.boton-musica:hover {
+
+    transform: scale(1.1);
+
+    background: var(--rosa-oscuro);
+
+}
+
+
+
+.boton-musica.reproduciendo {
+
+    animation: musicaPulso 2s infinite;
+
+}
+
+
+
+@keyframes musicaPulso {
+
+
+
+    0%, 100% {
+
+        box-shadow:
+
+            0 0 0 0 rgba(213, 138, 157, 0.5);
+
+    }
+
+
+
+    50% {
+
+        box-shadow:
+
+            0 0 0 12px rgba(213, 138, 157, 0);
+
+    }
+
+
+
+}
+
+
+
+
+
+/* =====================================
+
+   DISEÑO RESPONSIVO
+
+===================================== */
+
+
+
+@media (max-width: 768px) {
+
+
+
+    body {
+
+        padding-top: 70px;
+
+    }
+
+
+
+    .navbar {
+
+        min-height: 70px;
+
+    }
+
+
+
+    .hero-section {
+
+        padding: 55px 0;
+
+    }
+
+
+
+    .hero-xv {
+
+        font-size: 75px;
+
+    }
+
+
+
+    .hero-name {
+
+        font-size: 65px;
+
+    }
+
+
+
+    .foto-principal {
+
+        width: 290px;
+
+        height: 330px;
+
+        margin-top: 35px;
+
+    }
+
+
+
+    .countdown-box span {
+
+        font-size: 35px;
+
+    }
+
+
+
+    .familia-section,
+
+    .fiesta-section,
+
+    .vestimenta-section,
+
+    .historia-section,
+
+    .galeria-confirmacion-section {
+
+        padding: 40px 0;
+
+    }
+
+
+
+    .galeria-img {
+
+        height: 110px;
+
+    }
+
+
+
+    .section-title {
+
+        font-size: 25px;
+
+    }
+
+
+
+    .nombre-sobre {
+
+        font-size: 65px;
+
+    }
+
+
+
+    .subtitulo-sobre {
+
+        font-size: 15px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+
+    .texto-invitacion {
+
+        font-size: 12px;
+
+    }
+
+
+
+    .contenedor-sobre {
+
+        width: 88vw;
+
+    }
+
+
+
+    .sello-sobre {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 27px;
+
+    }
+
+
+
+    .flor-sobre {
+
+        font-size: 40px;
+
+    }
+
+
+
+    .flores-esquina {
+
+        font-size: 40px;
+
+    }
+
+
+
+    .instrucciones-sobre {
+
+        letter-spacing: 1px;
+
+    }
+
+
+
+    .boton-musica {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 21px;
+
+        right: 15px;
+
+        bottom: 15px;
+
+    }
+
+
+
+}
+
+
+
+@media (max-height: 600px) {
+
+
+
+    .pantalla-sobre {
+
+        justify-content: space-between;
+
+        padding: 15px 0;
+
+    }
+
+
+
+    .nombre-sobre {
+
+        font-size: 50px;
+
+    }
+
+
+
+    .contenedor-sobre {
+
+        width: min(65vw, 350px);
+
+    }
+
+
+
+    .instrucciones-sobre i {
+
+        display: none;
+
+    }
+
+
+
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+
+
+    .petalos-fondo,
+
+    .flores-esquina span,
+
+    .instrucciones-sobre i,
+
+    .boton-musica.reproduciendo {
+
+        animation: none;
+
+    }
+
+
+
+}
+
+/* =====================================
+
+   FLORES XV INTEGRADAS - DISEÑO FINAL
+
+   Inspirado en la referencia: lirios rosados,
+
+   flores suaves y follaje dorado.
+
+===================================== */
+
+
+
+/* Imagen floral completa en la pantalla de apertura */
+
+.fondo-floral-xv {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    background-image: url('../img/flores-xv-dalyla.png');
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    opacity: .96;
+
+}
+
+
+
+/* Suaviza el centro para que el texto y el sobre sean legibles */
+
+.pantalla-sobre::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    background: radial-gradient(circle at center,
+
+        rgba(255, 244, 246, .72) 0%,
+
+        rgba(255, 239, 243, .38) 38%,
+
+        rgba(255, 232, 238, .08) 68%,
+
+        transparent 82%);
+
+}
+
+
+
+.encabezado-sobre,
+
+.contenedor-sobre,
+
+.instrucciones-sobre {
+
+    position: relative;
+
+    z-index: 3;
+
+}
+
+
+
+/* Se ocultan las decoraciones antiguas con emojis */
+
+.flores-esquina {
+
+    display: none !important;
+
+}
+
+
+
+/* Flores reales recortadas visualmente en las esquinas del sobre */
+
+.flor-sobre {
+
+    position: absolute;
+
+    display: block;
+
+    width: 175px;
+
+    height: 145px;
+
+    z-index: 6;
+
+    pointer-events: none;
+
+    font-size: 0;
+
+    background-image: url('../img/flores-xv-dalyla.png');
+
+    background-repeat: no-repeat;
+
+    background-size: 600px auto;
+
+    opacity: .98;
+
+    filter: drop-shadow(0 6px 10px rgba(132, 72, 88, .16));
+
+}
+
+
+
+.flor-sobre-izquierda {
+
+    left: -70px;
+
+    bottom: -52px;
+
+    background-position: left bottom;
+
+    transform: none;
+
+}
+
+
+
+.flor-sobre-derecha {
+
+    right: -70px;
+
+    bottom: -52px;
+
+    background-position: right bottom;
+
+    transform: none;
+
+}
+
+
+
+/* Integra el mismo arreglo floral en la sección principal */
+
+.hero-section {
+
+    position: relative;
+
+    overflow: hidden;
+
+    isolation: isolate;
+
+}
+
+
+
+.hero-section::before,
+
+.hero-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    width: 430px;
+
+    height: 430px;
+
+    pointer-events: none;
+
+    background-image: url('../img/flores-xv-dalyla.png');
+
+    background-repeat: no-repeat;
+
+    background-size: 760px auto;
+
+    opacity: .48;
+
+}
+
+
+
+.hero-section::before {
+
+    top: -125px;
+
+    left: -145px;
+
+    background-position: left top;
+
+}
+
+
+
+.hero-section::after {
+
+    right: -150px;
+
+    bottom: -145px;
+
+    background-position: right bottom;
+
+}
+
+
+
+/* Reemplaza la flor emoji junto a la foto principal */
+
+.flores-decorativas {
+
+    width: 165px;
+
+    height: 165px;
+
+    right: -60px;
+
+    bottom: -58px;
+
+    font-size: 0 !important;
+
+    background-image: url('../img/flores-xv-dalyla.png');
+
+    background-repeat: no-repeat;
+
+    background-size: 590px auto;
+
+    background-position: right bottom;
+
+    filter: drop-shadow(0 6px 10px rgba(132, 72, 88, .15));
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .fondo-floral-xv {
+
+        background-size: auto 100%;
+
+        background-position: center;
+
+    }
+
+
+
+    .flor-sobre {
+
+        width: 110px;
+
+        height: 95px;
+
+        background-size: 400px auto;
+
+    }
+
+
+
+    .flor-sobre-izquierda {
+
+        left: -38px;
+
+        bottom: -32px;
+
+    }
+
+
+
+    .flor-sobre-derecha {
+
+        right: -38px;
+
+        bottom: -32px;
+
+    }
+
+
+
+    .hero-section::before,
+
+    .hero-section::after {
+
+        width: 280px;
+
+        height: 280px;
+
+        background-size: 500px auto;
+
+        opacity: .36;
+
+    }
+
+
+
+    .hero-section::before {
+
+        top: -90px;
+
+        left: -105px;
+
+    }
+
+
+
+    .hero-section::after {
+
+        right: -110px;
+
+        bottom: -90px;
+
+    }
+
+
+
+    .flores-decorativas {
+
+        width: 115px;
+
+        height: 115px;
+
+        right: -35px;
+
+        bottom: -40px;
+
+        background-size: 410px auto;
+
+    }
+
+}
+
+
+
+
+
+/* =====================================
+
+   REPRODUCTOR MUSICAL XV - NUEVO DISEÑO
+
+===================================== */
+
+.reproductor-xv {
+
+    width: min(100%, 520px);
+
+    margin: 32px auto 0;
+
+    padding: 24px 28px 20px;
+
+    border: 1px solid rgba(185,151,104,.32);
+
+    border-radius: 24px;
+
+    background: rgba(255,250,248,.78);
+
+    box-shadow: 0 12px 35px rgba(185,103,126,.12);
+
+    backdrop-filter: blur(8px);
+
+}
+
+.reproductor-instruccion {
+
+    margin: 0 0 18px;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: var(--dorado);
+
+    text-transform: uppercase;
+
+}
+
+.barra-musica {
+
+    position: relative;
+
+    height: 4px;
+
+    margin: 0 8px;
+
+    border-radius: 999px;
+
+    background: #e8d5d9;
+
+    cursor: pointer;
+
+}
+
+.progreso-musica {
+
+    width: 0;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: linear-gradient(90deg,var(--rosa),var(--dorado));
+
+}
+
+.punto-musica {
+
+    position: absolute;
+
+    top: 50%; left: 0;
+
+    width: 15px; height: 15px;
+
+    border-radius: 50%;
+
+    background: var(--rosa-oscuro);
+
+    border: 3px solid #fff;
+
+    box-shadow: 0 2px 7px rgba(0,0,0,.15);
+
+    transform: translate(-50%,-50%);
+
+}
+
+.tiempos-musica {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 8px 7px 4px;
+
+    font-size: 10px;
+
+    color: #9b7880;
+
+}
+
+.controles-musica {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 10px;
+
+}
+
+.control-musica {
+
+    position: static;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 0;
+
+    background: transparent;
+
+    color: var(--rosa-oscuro);
+
+    cursor: pointer;
+
+    transition: transform .2s ease,color .2s ease,background .2s ease;
+
+}
+
+.control-musica.secundario { width: 38px; height: 38px; font-size: 22px; }
+
+.control-musica.play {
+
+    width: 64px; height: 64px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,var(--rosa),var(--rosa-oscuro));
+
+    color: #fff;
+
+    font-size: 34px;
+
+    box-shadow: 0 8px 20px rgba(185,103,126,.28);
+
+}
+
+.control-musica:hover { transform: scale(1.1); }
+
+.control-musica.activo { color: var(--dorado); background: #fff0f3; border-radius: 50%; }
+
+.control-musica.play.reproduciendo { animation: musicaPulso 2s infinite; }
+
+.nombre-cancion {
+
+    margin: 12px 0 0;
+
+    font-family: 'Playfair Display',serif;
+
+    font-size: 12px;
+
+    color: var(--rosa-oscuro);
+
+}
+
+@media (max-width: 576px) {
+
+    .reproductor-xv { padding: 20px 14px 16px; }
+
+    .reproductor-instruccion { font-size: 9px; letter-spacing: 2px; }
+
+    .controles-musica { gap: 7px; }
+
+    .control-musica.secundario { width: 34px; height: 34px; font-size: 19px; }
+
+    .control-musica.play { width: 58px; height: 58px; font-size: 30px; }
+
+}
+
+
+
+/* =====================================
+
+   MARIPOSAS Y PAJARITOS ANIMADOS
+
+===================================== */
+
+.animales-voladores {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 10000;
+
+}
+
+.animal-volador {
+
+    position: absolute;
+
+    left: -90px;
+
+    top: var(--altura, 40%);
+
+    width: 40px;
+
+    height: 36px;
+
+    opacity: .8;
+
+    animation: vuelo-x var(--duracion, 18s) linear var(--retraso, 0s) infinite;
+
+    will-change: transform;
+
+}
+
+.animal-volador .aleteo {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    animation: aleteo-suave .65s ease-in-out infinite alternate;
+
+    filter: drop-shadow(0 2px 3px rgba(145,85,110,.16));
+
+}
+
+.animal-volador.mariposa .aleteo {
+
+    position: relative;
+
+    background: linear-gradient(145deg, #fff1f5, #e9a2b9 55%, #c880a0);
+
+    clip-path: polygon(50% 43%, 20% 3%, 0 18%, 8% 58%, 36% 62%, 16% 91%, 37% 100%, 50% 64%, 63% 100%, 84% 91%, 64% 62%, 92% 58%, 100% 18%, 80% 3%);
+
+}
+
+.animal-volador.mariposa .aleteo::after {
+
+    content: '';
+
+    position: absolute;
+
+    left: 47%; top: 27%;
+
+    width: 6%; height: 49%;
+
+    background: #a76a79;
+
+    border-radius: 6px;
+
+}
+
+.animal-volador.pajarito .aleteo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 30px;
+
+    color: #b99768;
+
+    animation-duration: 1.2s;
+
+}
+
+@keyframes vuelo-x {
+
+    0% { transform: translate3d(-60px, 0, 0) rotate(-8deg) scale(var(--escala, 1)); }
+
+    25% { transform: translate3d(30vw, -55px, 0) rotate(7deg) scale(var(--escala, 1)); }
+
+    50% { transform: translate3d(55vw, 35px, 0) rotate(-5deg) scale(var(--escala, 1)); }
+
+    75% { transform: translate3d(80vw, -35px, 0) rotate(6deg) scale(var(--escala, 1)); }
+
+    100% { transform: translate3d(calc(100vw + 150px), 0, 0) rotate(-8deg) scale(var(--escala, 1)); }
+
+}
+
+@keyframes aleteo-suave {
+
+    from { transform: scaleX(.55) rotate(-6deg); }
+
+    to { transform: scaleX(1) rotate(6deg); }
+
+}
+
+@media (max-width: 600px) {
+
+    .animal-volador { opacity: .65; }
+
+    .animal-volador:nth-child(n+5) { display: none; }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .animales-voladores { display: none; }
+
+}
+
+
+
+/* =====================================
+
+   LLUVIA DE SOBRES Y COMPARTIR FOTOS
+
+===================================== */
+
+.regalos-xv-section { padding: 75px 16px; background: linear-gradient(135deg,#fff5f8,#ffe7ee 55%,#fffaf8); }
+
+.regalos-xv-tarjeta { position:relative; overflow:hidden; max-width:760px; margin:auto; padding:55px 38px 50px; background:rgba(255,255,255,.91); border:1px solid #ebc6d0; box-shadow:0 12px 28px rgba(122,69,83,.13); }
+
+.regalos-xv-tarjeta::before,.regalos-xv-tarjeta::after { content:'✿'; position:absolute; font-size:125px; color:#e7acbe; opacity:.42; pointer-events:none; }
+
+.regalos-xv-tarjeta::before { top:-65px;left:-32px;transform:rotate(-25deg); }
+
+.regalos-xv-tarjeta::after { bottom:-70px;right:-26px;transform:rotate(28deg); }
+
+.regalos-xv-adorno,.regalos-xv-flores { color:var(--rosa);font-size:24px;letter-spacing:8px; }
+
+.regalos-xv-titulo { font-family:'Great Vibes',cursive;font-size:clamp(48px,7vw,78px);color:var(--rosa-oscuro); }
+
+.regalos-xv-icono { font-size:53px;color:var(--dorado);margin:5px 0 12px; }
+
+.regalos-xv-tarjeta p { max-width:570px;margin:0 auto 16px;font-size:16px;line-height:2; }
+
+.compartir-fotos-xv-section { position:relative;isolation:isolate;min-height:560px;display:flex;align-items:center;padding:75px 15px;color:white;background:#43313b;overflow:hidden; }
+
+.compartir-fotos-xv-fondo { position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(29,18,26,.73),rgba(34,20,30,.78)),url('../img/dalyla.jpeg') center 38% / cover no-repeat; }
+
+.compartir-fotos-xv-contenido { max-width:800px; }
+
+.compartir-fotos-xv-contenido h2 { font-family:'Great Vibes',cursive;font-size:clamp(54px,8vw,94px);font-weight:400;line-height:1.2;margin-bottom:5px; }
+
+.compartir-fotos-xv-subtitulo { font-family:'Playfair Display',serif;font-size:clamp(17px,2.5vw,25px); }
+
+.compartir-fotos-xv-camara { font-size:100px;line-height:1.2;margin:22px 0; }
+
+.compartir-fotos-xv-descripcion { font-family:'Playfair Display',serif;font-size:clamp(16px,2.4vw,23px);line-height:1.75;margin:0 auto 30px;max-width:710px; }
+
+.compartir-fotos-xv-boton { display:inline-flex;align-items:center;justify-content:center;gap:12px;border:2px solid #fff;color:white;text-decoration:none;padding:17px 30px;letter-spacing:4px;font-size:12px;font-weight:600;transition:background .25s,color .25s; }
+
+.compartir-fotos-xv-boton:hover,.compartir-fotos-xv-boton:focus-visible { background:white;color:#633a4a; }
+
+.compartir-fotos-xv-aviso { margin-top:17px;font-size:12px;opacity:.85; }
+
+@media(max-width:576px) { .regalos-xv-tarjeta { padding:45px 20px; } .regalos-xv-tarjeta p {font-size:14px;} .compartir-fotos-xv-section {min-height:520px;padding:60px 10px;} .compartir-fotos-xv-camara {font-size:75px;} .compartir-fotos-xv-boton {letter-spacing:2px;padding:15px 18px;} }
+
+
+
+
+
+/* Mesa de regalos: tarjeta floral inspirada en la referencia */
+
+.regalos-xv-section {
+
+  padding: 85px 16px;
+
+  background: linear-gradient(180deg, #fff6fb 0%, #fff0f6 100%);
+
+}
+
+.regalos-xv-tarjeta {
+
+  position: relative;
+
+  isolation: isolate;
+
+  overflow: hidden;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  padding: 76px 42px 72px;
+
+  background: #fff7fc;
+
+  border: 1px solid #f2dbe5;
+
+  box-shadow: 0 5px 8px #7050621f, 0 16px 35px #70506220;
+
+}
+
+.regalos-xv-interior { position: relative; z-index: 2; }
+
+.regalos-xv-titulo {
+
+  font-family: 'Great Vibes', cursive;
+
+  font-size: clamp(52px, 8vw, 88px);
+
+  font-weight: 400;
+
+  line-height: 1.3;
+
+  color: #bb718c;
+
+  margin: 0 0 12px;
+
+}
+
+.regalos-xv-tarjeta .regalos-xv-intro {
+
+  font-size: clamp(16px, 2.3vw, 23px);
+
+  line-height: 1.65;
+
+  max-width: 550px;
+
+  margin: 0 auto 25px;
+
+}
+
+.regalos-xv-icono {
+
+  width: 144px;
+
+  height: 144px;
+
+  margin: 10px auto 20px;
+
+  border-radius: 50%;
+
+  background: #a5c994;
+
+  color: #fff;
+
+  display: grid;
+
+  place-items: center;
+
+  font-size: 74px;
+
+  line-height: 1;
+
+}
+
+.regalos-xv-subtitulo {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: clamp(25px, 4vw, 36px);
+
+  font-weight: 400;
+
+  color: #b66e8b;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+
+}
+
+.regalos-xv-tarjeta .regalos-xv-descripcion {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: clamp(16px, 2.3vw, 23px);
+
+  line-height: 1.65;
+
+  max-width: 540px;
+
+  margin: 0 auto;
+
+}
+
+.regalos-rosas {
+
+  position: absolute;
+
+  z-index: 1;
+
+  width: 225px;
+
+  height: 225px;
+
+  background: url('../img/flores-xv-dalyla.png') center / cover no-repeat;
+
+  opacity: .84;
+
+  pointer-events: none;
+
+  border-radius: 50%;
+
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 73%);
+
+  mask-image: radial-gradient(ellipse at center, #000 35%, transparent 73%);
+
+}
+
+.regalos-rosas-superior { top: -70px; right: -67px; transform: rotate(180deg); }
+
+.regalos-rosas-inferior { bottom: -75px; left: -65px; }
+
+@media (max-width: 576px) {
+
+  .regalos-xv-section { padding: 48px 10px; }
+
+  .regalos-xv-tarjeta { padding: 75px 19px 68px; }
+
+  .regalos-rosas { width: 145px; height: 145px; }
+
+  .regalos-rosas-superior { top: -43px; right: -43px; }
+
+  .regalos-rosas-inferior { bottom: -43px; left: -43px; }
+
+  .regalos-xv-icono { width: 110px; height: 110px; font-size: 58px; }
+
+}
+
+
+
+
+
+/* EFECTOS CINEMATOGRÁFICOS INSPIRADOS EN EL VIDEO */
+
+.progreso-invitacion{position:fixed;top:0;left:0;right:0;height:4px;z-index:9998;pointer-events:none;background:rgba(255,235,240,.45)}
+
+.progreso-invitacion span{display:block;width:0;height:100%;background:linear-gradient(90deg,#d78fa3,#c6a06b,#d78fa3);transition:width .12s linear}
+
+.efecto-revelar{opacity:0;transform:translateY(44px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.7,.2,1)}
+
+.efecto-revelar.efecto-visible{opacity:1;transform:translateY(0)}
+
+.efecto-revelar .section-title,.efecto-revelar .regalos-xv-titulo,.efecto-revelar .compartir-fotos-xv-contenido h2{transition:transform 1s ease,opacity 1s ease}
+
+.efecto-revelar:not(.efecto-visible) .section-title,.efecto-revelar:not(.efecto-visible) .regalos-xv-titulo{transform:translateY(18px);opacity:.2}
+
+.familia-card,.fiesta-card,.regalos-xv-tarjeta,.foto-principal,.galeria-img{transition:transform .5s ease,box-shadow .5s ease,opacity .5s ease}
+
+@media (hover:hover){.familia-card:hover,.fiesta-card:hover,.regalos-xv-tarjeta:hover{transform:translateY(-7px);box-shadow:0 16px 34px rgba(164,89,110,.14)}.galeria-img:hover{transform:scale(1.045)}}
+
+.foto-principal img,.foto-historia img{animation:fotoRespira 12s ease-in-out infinite alternate}
+
+@keyframes fotoRespira{from{transform:scale(1)}to{transform:scale(1.045)}}
+
+.volver-arriba{position:fixed;right:20px;bottom:87px;z-index:1001;width:42px;height:42px;border:1px solid #e9c4ce;border-radius:50%;background:#fff8fa;color:#b9677e;box-shadow:0 4px 15px #b9677e33;opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .3s,transform .3s;cursor:pointer}
+
+.volver-arriba.visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+
+@media(max-width:768px){.volver-arriba{right:16px;bottom:76px}}
+
+@media(prefers-reduced-motion:reduce){.efecto-revelar,.efecto-revelar .section-title,.efecto-revelar .regalos-xv-titulo{opacity:1!important;transform:none!important;transition:none!important}.foto-principal img,.foto-historia img{animation:none!important}.progreso-invitacion span{transition:none}}
+
+
+
+
+
+/* ============================================
+
+   NUEVA PALETA: ROSADO INTENSO (OCT 2026)
+
+   Conserva flores, fotografías y funcionalidades.
+
+============================================ */
+
+:root {
+
+  --rosa: #e45b94;
+
+  --rosa-oscuro: #b92f6b;
+
+  --rosa-claro: #f7a8c9;
+
+  --blanco: #fff6fa;
+
+}
+
+body { background: #f7a5c6; }
+
+.navbar { background: rgba(255, 231, 240, .97); }
+
+.hero-section {
+
+  background: radial-gradient(circle at 14% 20%, #ffd0e0, transparent 38%),
+
+              radial-gradient(circle at 86% 78%, #ee79a9, transparent 45%),
+
+              linear-gradient(135deg,#f5a0c0,#f18bb4);
+
+}
+
+.countdown-section { background: linear-gradient(105deg,#e96c9e,#f7a8c8,#e56c9c); }
+
+.familia-section, .fiesta-section, .galeria-confirmacion-section { background: #f8a9c7; }
+
+.familia-card, .fiesta-card { background: linear-gradient(135deg,#ffe5ee,#f8c1d5); }
+
+.fecha-section { background: linear-gradient(120deg,#e56d9d,#f3a2c1,#e77ba5); }
+
+.vestimenta-section { background: linear-gradient(120deg,#f6a1c0,#ed7eaa); }
+
+.footer-section { background: #ec85ad; }
+
+.pantalla-sobre {
+
+  background: radial-gradient(circle at 15% 20%,#ffd5e4,transparent 36%),
+
+              radial-gradient(circle at 85% 80%,#ec76a5,transparent 40%),
+
+              linear-gradient(135deg,#f7a9c8,#f18ab3,#f6b2ce);
+
+}
+
+.regalos-xv-section { background: linear-gradient(180deg,#f19abd,#e879a8); }
+
+.regalos-xv-tarjeta { background: #ffeaf2; border-color:#f0a2c0; }
+
+.form-control, .form-select { background: #fff2f7; }
+
+@media (prefers-reduced-motion: reduce) {
+
+  .pantalla-sobre { scroll-behavior:auto; }
+
+}
+
+
+
+
+
+/* =========================================
+
+   NUEVO FONDO FLORAL CON CORONA
+
+   ========================================= */
+
+.pantalla-sobre {
+
+    background: #f8c4d4;
+
+}
+
+.fondo-floral-xv {
+
+    background-image: url('../img/fondo-corona-xv.png');
+
+    background-position: center;
+
+    background-size: 100% 100%;
+
+    opacity: 1;
+
+}
+
+.pantalla-sobre::after {
+
+    background: transparent;
+
+}
+
+.petalos-fondo {
+
+    opacity: .12;
+
+}
+
+.encabezado-sobre {
+
+    margin-top: clamp(80px, 14vh, 155px);
+
+}
+
+.hero-section {
+
+    background-image: url('../img/fondo-corona-xv.png');
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.hero-section .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+@media (max-width: 767px) {
+
+    .fondo-floral-xv {
+
+        background-image: url('../img/fondo-corona-movil.png');
+
+        background-size: 100% 100%;
+
+    }
+
+    .encabezado-sobre {
+
+        margin-top: 100px;
+
+    }
+
+    .hero-section {
+
+        background-image: url('../img/fondo-corona-movil.png');
+
+        background-position: center top;
+
+    }
+
+}
+
+
+
+
+
+/* =================================================
+
+   TIPOGRAFÍA FORMAL Y TAMAÑOS MEJORADOS — DALYLA
+
+   ================================================= */
+
+:root { --fuente-caligrafica: 'Great Vibes', cursive; --fuente-titulos: 'Cormorant Garamond', Georgia, serif; --fuente-textos: 'Libre Baskerville', Georgia, serif; }
+
+body { font-family: var(--fuente-textos); font-size: 16px; line-height: 1.85; }
+
+.navbar-brand, .nombre-sobre, .hero-name, .carta-nombre, .footer-section h2, .regalos-xv-titulo, .compartir-fotos-xv-contenido h2, .historia-frase { font-family: var(--fuente-caligrafica); font-weight: 400; }
+
+.section-title, .hero-subtitle, .countdown-title, .fecha-dia, .fecha-mes, .familia-card h3, .fiesta-card h3, .historia-title, .vestimenta-section h3, .regalos-xv-subtitulo, .compartir-fotos-xv-subtitulo, .hora-evento { font-family: var(--fuente-titulos); font-weight: 600; letter-spacing: .025em; }
+
+.section-title { font-size: clamp(32px, 3.5vw, 44px); line-height: 1.2; }
+
+.nombre-sobre { font-size: clamp(68px, 9vw, 130px); line-height: 1.12; }
+
+.hero-name { font-size: clamp(68px, 8.5vw, 116px); line-height: 1.13; }
+
+.hero-xv { font-family: var(--fuente-titulos); font-size: clamp(90px, 10vw, 125px); }
+
+.hero-subtitle { font-size: clamp(22px, 2.6vw, 30px); }
+
+.hero-description, .familia-introduccion, .familia-card p, .fiesta-card p, .vestimenta-aviso, .historia-texto, .confirmacion-texto, .regalos-xv-tarjeta p, .regalos-xv-tarjeta .regalos-xv-intro, .regalos-xv-tarjeta .regalos-xv-descripcion { font-family: var(--fuente-textos); font-size: clamp(15px, 1.45vw, 18px); line-height: 1.9; }
+
+.familia-card h3, .fiesta-card h3 { font-size: clamp(23px, 2.3vw, 30px); }
+
+.nav-link { font-family: var(--fuente-titulos); font-size: 16px; font-weight: 700; letter-spacing: .035em; }
+
+.btn, .form-label, .form-control, .form-select { font-family: var(--fuente-textos); font-size: 14px; }
+
+.countdown-box p, .fecha-subtitulo, .texto-invitacion, .subtitulo-sobre { font-family: var(--fuente-titulos); font-size: clamp(16px, 2vw, 21px); font-weight: 600; }
+
+.countdown-box span { font-family: var(--fuente-titulos); font-size: clamp(42px, 5vw, 55px); }
+
+.regalos-xv-titulo { font-size: clamp(57px, 7vw, 88px); }
+
+.regalos-xv-subtitulo { font-size: clamp(26px, 3.2vw, 36px); }
+
+.compartir-fotos-xv-contenido h2 { font-size: clamp(62px, 8vw, 106px); }
+
+.carta-titulo, .carta-fecha { font-family: var(--fuente-titulos); }
+
+@media (max-width: 576px) {
+
+  body { font-size: 15px; }
+
+  .nombre-sobre { font-size: clamp(55px, 12vw, 78px); }
+
+  .hero-name { font-size: clamp(58px, 12vw, 79px); }
+
+  .section-title { font-size: 32px; }
+
+  .nav-link { font-size: 17px; }
+
+  .regalos-xv-tarjeta p, .regalos-xv-tarjeta .regalos-xv-intro, .regalos-xv-tarjeta .regalos-xv-descripcion { font-size: 15px; }
+
+}
+
+
+
+
+
+/* Flores adicionales en el recorrido de la invitación */
+
+/* Se aplican en los laterales, sin tapar textos ni controles. */
+
+.familia-section, .fecha-section, .fiesta-section,
+
+.vestimenta-section, .historia-section,
+
+.galeria-confirmacion-section, .regalos-xv-section,
+
+.compartir-fotos-xv-section, .footer-section, .countdown-section {
+
+  position: relative;
+
+  isolation: isolate;
+
+}
+
+.familia-section::before, .fecha-section::before, .fiesta-section::before,
+
+.vestimenta-section::before, .historia-section::before,
+
+.galeria-confirmacion-section::before, .regalos-xv-section::before,
+
+.compartir-fotos-xv-section::before, .footer-section::before, .countdown-section::before {
+
+  content: ""; position: absolute; left: 0; top: 0;
+
+  width: clamp(105px, 22vw, 320px); height: clamp(170px, 32vw, 420px);
+
+  background: url('../img/flores-superior-lateral.png') left top / 100% 100% no-repeat;
+
+  pointer-events: none; z-index: -1; opacity: .8;
+
+}
+
+.familia-section::after, .fecha-section::after, .fiesta-section::after,
+
+.vestimenta-section::after, .historia-section::after,
+
+.galeria-confirmacion-section::after, .regalos-xv-section::after,
+
+.compartir-fotos-xv-section::after, .footer-section::after, .countdown-section::after {
+
+  content: ""; position: absolute; right: 0; bottom: 0;
+
+  width: clamp(105px, 22vw, 320px); height: clamp(170px, 32vw, 420px);
+
+  background: url('../img/flores-inferior-lateral.png') right bottom / 100% 100% no-repeat;
+
+  transform: scaleX(-1); pointer-events: none; z-index: -1; opacity: .8;
+
+}
+
+@media (max-width: 767px) {
+
+  .familia-section::before, .fecha-section::before, .fiesta-section::before,
+
+  .vestimenta-section::before, .historia-section::before,
+
+  .galeria-confirmacion-section::before, .regalos-xv-section::before,
+
+  .compartir-fotos-xv-section::before, .footer-section::before, .countdown-section::before,
+
+  .familia-section::after, .fecha-section::after, .fiesta-section::after,
+
+  .vestimenta-section::after, .historia-section::after,
+
+  .galeria-confirmacion-section::after, .regalos-xv-section::after,
+
+  .compartir-fotos-xv-section::after, .footer-section::after, .countdown-section::after {
+
+    width: 115px; height: 175px; opacity: .50;
+
+  }
+
+}
+
+
+
+
+
+/* Encabezado centrado bajo la corona, con lectura accesible */
+
+.hero-section { position: relative; padding-top: 300px; }
+
+.hero-section > .container { position: relative; }
+
+.hero-invitacion-corona {
+
+  position: absolute;
+
+  top: -205px;
+
+  right: 4%;
+
+  width: 46%;
+
+  z-index: 4;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  text-align: center;
+
+  color: #793453;
+
+  text-shadow: 0 1px 3px rgba(255,255,255,.95);
+
+  background: rgba(255,247,249,.80);
+
+  border: 1px solid rgba(164,95,115,.35);
+
+  border-radius: 16px;
+
+  padding: 14px 12px;
+
+}
+
+.hero-invitacion-corona span {
+
+  font-family: var(--fuente-titulos), Georgia, serif;
+
+  font-size: clamp(23px,2.7vw,38px);
+
+  font-weight: 700;
+
+  line-height: 1.25;
+
+  letter-spacing: .035em;
+
+}
+
+.hero-invitacion-corona strong {
+
+  font-family: var(--fuente-titulos), Georgia, serif;
+
+  font-size: clamp(36px,4.3vw,59px);
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+}
+
+@media (max-width: 991px) {
+
+  .hero-section { padding-top: 230px; }
+
+  .hero-invitacion-corona { top: -180px; left: 50%; right: auto; transform: translateX(-50%); width: min(90%,560px); }
+
+}
+
+@media (max-width: 576px) {
+
+  .hero-section { padding-top: 220px; }
+
+  .hero-invitacion-corona { top: -178px; width: 92%; padding: 12px 8px; }
+
+  .hero-invitacion-corona span { font-size: clamp(22px,5.4vw,27px); }
+
+  .hero-invitacion-corona strong { font-size: clamp(36px,9vw,47px); }
+
+}
+
+
+
+/* === Flores más envolventes y con profundidad === */
+
+.hero-section, .familia-section, .fiesta-section, .fecha-section,
+
+.vestimenta-section, .galeria-confirmacion-section, .regalos-xv-section {
+
+  position: relative;
+
+  isolation: isolate;
+
+}
+
+.hero-section::before, .familia-section::before, .fiesta-section::before,
+
+.vestimenta-section::before, .galeria-confirmacion-section::before,
+
+.regalos-xv-section::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  background-image: url('../img/fondo-corona-xv.png');
+
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+
+  opacity: .25;
+
+  filter: drop-shadow(0 8px 10px rgba(127, 49, 80, .22));
+
+}
+
+.hero-section::before { opacity: .42; }
+
+.familia-card, .fiesta-card, .regalos-xv-tarjeta {
+
+  box-shadow: 0 12px 32px rgba(121, 52, 83, .20), 0 0 0 3px rgba(255,255,255,.55);
+
+  border: 2px solid rgba(183, 117, 133, .36);
+
+}
+
+.foto-contactos-xv { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin: 22px auto; }
+
+.foto-contacto-numero { font-size: 1.15rem; font-weight: 700; color: #fff; }
+
+.enlace-forms-pendiente { background: rgba(255,255,255,.13); }
+
+@media (max-width: 767px) {
+
+ .hero-section::before, .familia-section::before, .fiesta-section::before,
+
+ .vestimenta-section::before, .galeria-confirmacion-section::before,
+
+ .regalos-xv-section::before {
+
+   background-image: url('../img/fondo-corona-movil.png');
+
+   background-size: 100% 100%;
+
+   opacity: .17;
+
+ }
+
+ .foto-contactos-xv { flex-direction: column; }
+
+}
+
+
+
+
+
+/* AJUSTE FINAL: título centrado debajo de la corona, sin recuadro blanco */
+
+.hero-section { padding-top: clamp(340px, 30vw, 455px); }
+
+.hero-section > .container { position: relative; }
+
+.hero-invitacion-corona {
+
+  position: absolute;
+
+  top: -165px;
+
+  left: 50%;
+
+  right: auto;
+
+  transform: translateX(-50%);
+
+  width: min(92%, 760px);
+
+  padding: 0 12px;
+
+  margin: 0;
+
+  background: transparent !important;
+
+  border: 0 !important;
+
+  border-radius: 0;
+
+  box-shadow: none !important;
+
+  color: #823451;
+
+  text-shadow: 0 1px 2px rgba(255,235,241,.85);
+
+  text-align: center;
+
+  z-index: 5;
+
+}
+
+.hero-invitacion-corona span { font-size: clamp(24px, 3.1vw, 43px); }
+
+.hero-invitacion-corona strong { font-size: clamp(42px, 5vw, 68px); }
+
+@media (max-width: 991px) {
+
+  .hero-section { padding-top: 350px; }
+
+  .hero-invitacion-corona { top: -155px; width: 94%; }
+
+}
+
+@media (max-width: 576px) {
+
+  .hero-section { padding-top: 330px; }
+
+  .hero-invitacion-corona { top: -150px; width: 96%; padding: 0 6px; }
+
+  .hero-invitacion-corona span { font-size: clamp(23px, 5.5vw, 29px); }
+
+  .hero-invitacion-corona strong { font-size: clamp(40px, 10vw, 52px); }
+
+}
+
+
+
+
+
+/* AJUSTE SOLICITADO: letras más abajo y foto más arriba */
+
+.hero-section {
+
+  padding-top: clamp(365px, 34vw, 485px);
+
+}
+
+.hero-invitacion-corona {
+
+  top: -125px; /* baja el título respecto de la versión anterior */
+
+}
+
+.hero-section .foto-principal {
+
+  transform: translateY(-38px); /* sube el marco circular */
+
+}
+
+.hero-section .foto-dalyla {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+@media (max-width: 991px) {
+
+  .hero-section { padding-top: 370px; }
+
+  .hero-invitacion-corona { top: -112px; }
+
+  .hero-section .foto-principal { transform: translateY(-28px); }
+
+}
+
+@media (max-width: 576px) {
+
+  .hero-section { padding-top: 355px; }
+
+  .hero-invitacion-corona { top: -105px; }
+
+  .hero-section .foto-principal { transform: translateY(-22px); }
+
+}
+
+
+
+
+
+/* DESPEDIDA FLORAL — DISEÑO LEGIBLE Y RESPONSIVO */
+
+.footer-section {
+
+  position: relative;
+
+  isolation: isolate;
+
+  min-height: auto !important;
+
+  padding: clamp(68px, 8vw, 110px) 16px !important;
+
+  background: linear-gradient(135deg, #f5a9c3 0%, #f9c4d5 48%, #f0a0bd 100%) !important;
+
+  color: #653449;
+
+  overflow: hidden;
+
+}
+
+.footer-section::before, .footer-section::after {
+
+  content: "";
+
+  position: absolute;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  width: clamp(190px, 34vw, 540px);
+
+  height: clamp(250px, 47vw, 700px);
+
+  background-repeat: no-repeat;
+
+  background-size: contain;
+
+  opacity: .85;
+
+  filter: drop-shadow(0 10px 18px rgba(116, 49, 72, .14));
+
+}
+
+.footer-section::before { top: -12px; left: -20px; background-image: url('../img/flores-superior-lateral.png'); background-position: left top; }
+
+.footer-section::after { right: -20px; bottom: -16px; background-image: url('../img/flores-inferior-lateral.png'); background-position: right bottom; }
+
+.despedida-contenedor { max-width: 940px; position: relative; z-index: 1; }
+
+.despedida-tarjeta {
+
+  text-align: center;
+
+  padding: clamp(34px, 6vw, 74px) clamp(22px, 6vw, 80px);
+
+  border: 2px solid rgba(175, 119, 65, .8);
+
+  outline: 5px solid rgba(255, 240, 245, .68);
+
+  outline-offset: 7px;
+
+  border-radius: 24px;
+
+  background: rgba(255, 243, 247, .90);
+
+  box-shadow: 0 20px 55px rgba(122, 46, 76, .18);
+
+  backdrop-filter: blur(5px);
+
+}
+
+.despedida-corona { font-size: 3rem; color: #b38a51; line-height: 1.2; margin-bottom: 12px; }
+
+.despedida-ornamento { color: #c87998; font-size: 1.6rem; }
+
+.footer-section .despedida-intro { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.35rem, 3vw, 2rem) !important; font-weight: 700; letter-spacing: .035em; line-height: 1.35; color: #74384f; max-width: 680px; margin: 12px auto 18px; }
+
+.despedida-separador { font-size: 1.4rem; color: #b68458; margin: 10px 0; }
+
+.footer-section .despedida-nombre { font-family: 'Great Vibes', cursive; font-size: clamp(3.6rem, 9vw, 6.4rem) !important; line-height: 1.2; color: #ae2e66; margin: 12px 0 8px; }
+
+.despedida-subtitulo { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: #7e3c58; margin: 6px 0; }
+
+.footer-section .despedida-fecha { font-size: clamp(1.05rem, 2.4vw, 1.35rem) !important; font-weight: 600; color: #74455b; }
+
+.footer-section .despedida-mensaje { font-size: clamp(1.12rem, 2.5vw, 1.4rem) !important; line-height: 1.7; color: #63384b; max-width: 670px; margin: 24px auto; }
+
+.despedida-flores { color: #c65c8b; font-size: 1.8rem; letter-spacing: .2em; margin-bottom: 24px; }
+
+.despedida-volver { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 12px 26px; border-radius: 100px; color: #fff; background: #9b365f; font-size: 1.05rem; font-weight: 700; text-decoration: none; transition: transform .25s ease, background .25s ease; }
+
+.despedida-volver:hover, .despedida-volver:focus-visible { background: #7d274a; color: #fff; transform: translateY(-3px); }
+
+@media(max-width: 600px) {
+
+  .footer-section { padding: 65px 24px !important; }
+
+  .footer-section::before, .footer-section::after { opacity: .5; width: 190px; height: 260px; }
+
+  .despedida-tarjeta { padding: 32px 17px; }
+
+  .footer-section .despedida-nombre { font-size: clamp(3rem, 13vw, 4.4rem) !important; }
+
+}
+
+@media(prefers-reduced-motion: reduce) { .despedida-volver { transition: none; } }
+
+
+
+
+
+/* DESPEDIDA SIN RECUADRO BLANCO */
+
+.footer-section .despedida-tarjeta {
+
+  background: transparent !important;
+
+  border: none !important;
+
+  outline: none !important;
+
+  box-shadow: none !important;
+
+  backdrop-filter: none !important;
+
+  -webkit-backdrop-filter: none !important;
+
+  border-radius: 0 !important;
+
+}
+
+.footer-section .despedida-contenedor { max-width: 940px; }
+
+
+
+
+
+/* AJUSTE FINAL: fotografía principal centrada, completa y responsiva */
+
+.hero-section .row { align-items: center !important; }
+
+.hero-section .row > .col-lg-6:last-child {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-width: 0;
+
+}
+
+.hero-section .foto-principal {
+
+  width: min(100%, 410px);
+
+  height: auto;
+
+  aspect-ratio: 350 / 390;
+
+  margin: 20px auto 30px;
+
+  padding: 9px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  transform: none !important;
+
+  overflow: visible;
+
+}
+
+.hero-section .foto-principal .foto-dalyla {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  max-width: 100%;
+
+  max-height: 100%;
+
+  object-fit: contain !important;
+
+  object-position: center center !important;
+
+  border-radius: 50% 50% 44% 44%;
+
+}
+
+.hero-section .foto-principal .corona { z-index: 3; }
+
+.hero-section .foto-principal .flores-decorativas { pointer-events: none; }
+
+@media (max-width: 991px) {
+
+  .hero-section .row > .col-lg-6:last-child { padding-top: 22px; }
+
+  .hero-section .foto-principal { width: min(80vw, 390px); margin: 24px auto 30px; }
+
+}
+
+@media (max-width: 576px) {
+
+  .hero-section .foto-principal { width: min(82vw, 340px); margin: 28px auto 25px; }
+
+}
+
+
+
+
+
+/* CORRECCIÓN: elevar el retrato y evitar que la flor cubra la fotografía */
+
+.hero-section .foto-principal {
+
+  position: relative;
+
+  transform: translateY(-85px) !important;
+
+  margin-bottom: -45px;
+
+}
+
+.hero-section .foto-principal .flores-decorativas {
+
+  right: -75px;
+
+  bottom: -95px;
+
+  z-index: 0;
+
+}
+
+.hero-section .foto-principal .foto-dalyla {
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+@media (max-width: 991px) {
+
+  .hero-section .foto-principal { transform: translateY(-60px) !important; margin-bottom: -25px; }
+
+  .hero-section .foto-principal .flores-decorativas { right: -35px; bottom: -75px; }
+
+}
+
+@media (max-width: 576px) {
+
+  .hero-section .foto-principal { transform: translateY(-45px) !important; margin-bottom: -15px; }
+
+  .hero-section .foto-principal .flores-decorativas { right: -22px; bottom: -60px; }
+
+}
+
+
+
+
+
+/* ===== RETRATO PRINCIPAL: MARCO QUE RESPETA LA FOTO HORIZONTAL ===== */
+
+.hero-section .row > .col-lg-6:last-child {
+
+  display: flex; align-items: center; justify-content: center;
+
+  position: relative; min-width: 0;
+
+}
+
+.hero-section .foto-principal {
+
+  box-sizing: border-box;
+
+  width: min(100%, 620px) !important;
+
+  height: auto !important;
+
+  aspect-ratio: 3 / 2 !important;
+
+  margin: 10px auto 35px !important;
+
+  padding: 9px !important;
+
+  border: 3px solid #b99768 !important;
+
+  border-radius: 28px !important;
+
+  background: #fff2f5;
+
+  box-shadow: 0 0 0 6px rgba(255,248,250,.9), 0 16px 34px rgba(112,48,76,.2) !important;
+
+  transform: translateY(-20px) !important;
+
+  overflow: visible !important;
+
+  animation: none !important;
+
+}
+
+.hero-section .foto-principal .foto-dalyla {
+
+  display: block !important;
+
+  width: 100% !important; height: 100% !important;
+
+  max-width: none !important; max-height: none !important;
+
+  object-fit: cover !important;
+
+  object-position: center center !important;
+
+  border-radius: 18px !important;
+
+  animation: none !important;
+
+}
+
+.hero-section .foto-principal .corona {
+
+  top: -58px !important; z-index: 4;
+
+}
+
+.hero-section .foto-principal .flores-decorativas {
+
+  right: -32px !important; bottom: -42px !important;
+
+  width: 90px !important; height: 90px !important;
+
+  background-size: 330px auto !important;
+
+  opacity: .75; z-index: -1 !important; pointer-events: none;
+
+}
+
+@media (max-width: 991px) {
+
+  .hero-section .foto-principal {
+
+    width: min(90vw, 580px) !important;
+
+    transform: translateY(0) !important;
+
+    margin: 28px auto 45px !important;
+
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .hero-section .foto-principal {
+
+    width: min(90vw, 480px) !important;
+
+    padding: 5px !important; border-radius: 18px !important;
+
+  }
+
+  .hero-section .foto-principal .foto-dalyla { border-radius: 11px !important; }
+
+  .hero-section .foto-principal .corona { top: -43px !important; font-size: 42px !important; }
+
+  .hero-section .foto-principal .flores-decorativas {
+
+    width: 65px !important; height: 65px !important;
+
+    right: -12px !important; bottom: -22px !important;
+
+  }
+
+}
+
+
+/* ============================================
+   MENÚ DALYLA: ACCESIBLE Y RESPONSIVO
+   ============================================ */
+.navbar-dalyla {
+  background: rgba(255, 231, 240, .97) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(185, 151, 104, .30);
+  box-shadow: 0 5px 18px rgba(128, 55, 81, .12);
+  min-height: 80px;
+  z-index: 1030;
+}
+.navbar-dalyla .marca-dalyla {color:#ad7952 !important;white-space:nowrap;font-size:clamp(2rem,2.5vw,2.65rem);}
+.navbar-dalyla .marca-nombre {font-size:.68em;color:#9b3f64;}
+.navbar-dalyla .nav-link {
+  color:#68384b !important;
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(1rem,1.05vw,1.15rem);
+  font-weight:700;
+  letter-spacing:.015em;
+  padding:.65rem .55rem !important;
+  margin:0 .08rem;
+  border-radius:12px;
+  transition:background .2s,color .2s;
+}
+.navbar-dalyla .nav-link:hover,
+.navbar-dalyla .nav-link:focus-visible,
+.navbar-dalyla .nav-link.active {color:#a92563 !important;background:rgba(255,255,255,.55);}
+.navbar-dalyla .nav-confirmar {background:#c73d79;color:#fff !important;padding:.65rem .9rem !important;}
+.navbar-dalyla .nav-confirmar:hover,.navbar-dalyla .nav-confirmar:focus-visible {background:#a62a60;color:#fff !important;}
+.navbar-dalyla .nav-ubicacion {color:#855e31 !important;}
+.navbar-dalyla .navbar-toggler {border:1px solid #bd8e9f;padding:.5rem .65rem;}
+.navbar-dalyla .navbar-toggler:focus-visible {box-shadow:0 0 0 .2rem rgba(184,76,120,.3);}
+html {scroll-padding-top:110px;}
+#inicio,#familia,#fiesta,#historia,#galeria,#regalos,#compartirFotos,#confirmar {scroll-margin-top:110px;}
+@media(max-width:1199.98px){
+  .navbar-dalyla .navbar-collapse {max-height:calc(100dvh - 82px);overflow-y:auto;padding:12px 0 20px;}
+  .navbar-dalyla .nav-link {font-size:1.18rem;padding:12px 16px !important;margin:2px 0;}
+  .navbar-dalyla .nav-confirmar {display:inline-block;}
+}
+@media(min-width:1200px) and (max-width:1450px){
+  .navbar-dalyla .marca-nombre {display:none;}
+  .navbar-dalyla .nav-link {font-size:1rem;padding:.55rem .36rem !important;}
+}
+@media(prefers-reduced-motion:reduce){.navbar-dalyla .nav-link{transition:none;}}
+
+/* MENÚ SIEMPRE DESPLEGABLE (PC Y MÓVIL) */
+.navbar-dalyla-dropdown .container-fluid { position: relative; }
+.navbar-dalyla-dropdown .navbar-toggler {
+  display: inline-flex !important; align-items: center; gap: .45rem;
+  color: #793b54; background: #fff1f5; border: 1px solid #c99aab;
+  border-radius: 12px; padding: .45rem .85rem; font-size: 1.05rem;
+  font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700;
+}
+.navbar-dalyla-dropdown .navbar-toggler .bi-list { font-size: 1.65rem; line-height: 1; }
+.navbar-dalyla-dropdown .navbar-collapse {
+  position: absolute; top: calc(100% + 10px); right: 12px; left: auto;
+  width: min(360px, calc(100vw - 24px)); max-height: calc(100dvh - 105px);
+  overflow-y: auto; background: rgba(255,239,245,.99);
+  border: 1px solid #d6a4b6; border-radius: 18px;
+  padding: 12px; box-shadow: 0 15px 35px rgba(99,37,61,.24);
+}
+.navbar-dalyla-dropdown .navbar-collapse:not(.show):not(.collapsing) { display: none !important; }
+.navbar-dalyla-dropdown .navbar-nav { display: flex; flex-direction: column !important; align-items: stretch !important; width: 100%; }
+.navbar-dalyla-dropdown .nav-link {
+  display: block; font-size: 1.16rem !important; padding: 12px 15px !important;
+  margin: 2px 0 !important; text-align: left;
+}
+.navbar-dalyla-dropdown .nav-confirmar { display: block !important; }
+@media(max-width: 575.98px) {
+ .navbar-dalyla-dropdown .marca-nombre { display:none; }
+ .navbar-dalyla-dropdown .marca-dalyla {font-size: 2rem !important;}
+ .navbar-dalyla-dropdown .navbar-collapse {right: 8px; width: min(340px, calc(100vw - 16px));}
+}
+
+/* Anclas del menú: dejan visible el título bajo la barra fija */
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+#inicio, #familia, #fiesta, #historia, #galeria, #regalos, #compartirFotos, #confirmar { scroll-margin-top: 110px; }
+@media (max-width: 767px) {
+ html { scroll-padding-top: 85px; }
+ #inicio, #familia, #fiesta, #historia, #galeria, #regalos, #compartirFotos, #confirmar { scroll-margin-top: 85px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
