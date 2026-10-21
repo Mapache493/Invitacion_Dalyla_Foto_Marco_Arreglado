@@ -1,5 +1,3 @@
-
-
 /* =====================================
 
    CONFIGURACIÓN GENERAL
@@ -4680,3 +4678,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 110px; }
  #inicio, #familia, #fiesta, #historia, #galeria, #regalos, #compartirFotos, #confirmar { scroll-margin-top: 85px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+
+/* CORRECCIÓN: SOBRE ROSADO EN TODOS LOS DISPOSITIVOS */
+.sobre-fondo { background: #f4b6c9; }
+.sobre-solapa { background: linear-gradient(135deg, #ffe5ee, #f5b3ca); }
+.sobre-lateral-izquierdo { background: linear-gradient(135deg, #ffdce9, #f3aac3); }
+.sobre-lateral-derecho { background: linear-gradient(225deg, #ffdeea, #efa5bf); }
+.sobre-frontal { background: linear-gradient(180deg, #ffe1ec, #f4b1c8); }
+.sello-sobre { background: linear-gradient(135deg, #ffe5ef, #d98eac); }
