@@ -1,4 +1,3 @@
-
 // ========================================
 // CONFIGURACIÓN DE LA INVITACIÓN
 // ========================================
@@ -406,66 +405,10 @@ document.getElementById(
 // CONFIRMACIÓN POR WHATSAPP
 // ========================================
 
-const formulario = document.getElementById(
-    "formConfirmacion"
-);
-
-formulario.addEventListener(
-    "submit",
-    function (evento) {
-
-        evento.preventDefault();
-
-        const nombre = document.getElementById(
-            "nombre"
-        ).value.trim();
-
-        const acompanantes = document.getElementById(
-            "acompanantes"
-        ).value;
-
-        // Validar formulario.
-
-        if (nombre === "" || acompanantes === "") {
-
-            alert(
-                "Por favor, completa todos los campos."
-            );
-
-            return;
-        }
-
-        // Preparar mensaje de WhatsApp.
-
-        const mensaje =
-            "¡Hola! 💖\n\n" +
-            "Quiero confirmar mi asistencia a los " +
-            "XV años de Dalyla Alixtzel Carrillo Chan.\n\n" +
-            "Nombre: " + nombre + "\n" +
-            "Acompañantes: " + acompanantes + "\n\n" +
-            "Fecha: 31 de octubre de 2026.\n" +
-            "Hora de la fiesta: 8:30 PM.\n\n" +
-            "¡Muchas gracias por la invitación!";
-
-        const destinoConfirmacion = document.getElementById("telefonoConfirmacion")?.value || numeroWhatsApp;
-        const enlaceWhatsApp =
-            "https://wa.me/" +
-            destinoConfirmacion +
-            "?text=" +
-            encodeURIComponent(mensaje);
-
-        // Abrir WhatsApp con el mensaje preparado.
-
-        window.open(
-            enlaceWhatsApp,
-            "_blank",
-            "noopener,noreferrer"
-        );
-
-    }
-);
+// El formulario se gestiona en js/asistencia.js para evitar envíos duplicados.
 
 
+// ========================================
 // ========================================
 // CERRAR MENÚ EN DISPOSITIVOS MÓVILES
 // ========================================
