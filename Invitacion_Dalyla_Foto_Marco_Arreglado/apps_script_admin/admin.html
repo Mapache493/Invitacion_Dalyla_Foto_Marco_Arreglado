@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Control de asistencia | XV Dalyla</title>
+
+    <style>
+        /* ========================================
+           VARIABLES GENERALES
+        ======================================== */
+
+        :root {
+            font-family: system-ui, -apple-system,
+                "Segoe UI", sans-serif;
+
+            color: #482b3c;
+            background: #fff7fa;
+
+            --rosa-principal: #a53e70;
+            --rosa-oscuro: #8b315d;
+            --rosa-claro: #fff7fa;
+            --borde: #f2dbe5;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        /* ========================================
+           ENCABEZADO
+        ======================================== */
+
+        .top {
+            background: linear-gradient(
+                115deg,
+                #8b315d,
+                #c7638e
+            );
+
+            color: white;
+
+            padding: 34px max(
+                20px,
+                calc((100vw - 1100px) / 2)
+            );
+        }
+
+        .top h1 {
+            margin: 4px 0;
+
+            font-size: clamp(
+                25px,
+                4vw,
+                38px
+            );
+        }
+
+        .top p {
+            margin: 5px 0;
+            opacity: 0.88;
+        }
+
+        /* ========================================
+           CONTENEDOR PRINCIPAL
+        ======================================== */
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* ========================================
+           ESTADÍSTICAS
+        ======================================== */
+
+        .stats {
+            display: grid;
+
+            grid-template-columns: repeat(
+                4,
+                minmax(0, 1fr)
+            );
+
+            gap: 14px;
+        }
+
+        .card {
+            background: white;
+
+            border: 1px solid var(--borde);
+            border-radius: 18px;
+
+            padding: 20px;
+
+            box-shadow: 0 8px 28px
+                rgba(105, 43, 66, 0.06);
+
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card span {
+            display: block;
+
+            color: #875a70;
+            font-size: 13px;
+        }
+
+        .card strong {
+            display: block;
+
+            margin-top: 7px;
+
+            font-size: 32px;
+            color: #a13d6d;
+        }
+
+        /* ========================================
+           PANEL DE CONFIRMACIONES
+        ======================================== */
+
+        .panel {
+            background: white;
+
+            border: 1px solid var(--borde);
+            border-radius: 18px;
+
+            margin-top: 24px;
+            padding: 20px;
+
+            box-shadow: 0 8px 28px
+                rgba(105, 43, 66, 0.06);
+        }
+
+        /* ========================================
+           BARRA DE HERRAMIENTAS
+        ======================================== */
+
+        .toolbar {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .toolbar h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .toolbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* ========================================
+           BUSCADOR
+        ======================================== */
+
+        input {
+            border: 1px solid #e5c7d4;
+            border-radius: 10px;
+
+            padding: 12px;
+
+            min-width: 220px;
+            max-width: 100%;
+
+            font: inherit;
+
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: var(--rosa-principal);
+        }
+
+        /* ========================================
+           BOTONES
+        ======================================== */
+
+        button {
+            background: var(--rosa-principal);
+            color: white;
+
+            border: none;
+            border-radius: 10px;
+
+            padding: 12px 18px;
+
+            cursor: pointer;
+            font-weight: 650;
+
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: var(--rosa-oscuro);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: wait;
+        }
+
+        /* ========================================
+           TABLA
+        ======================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+            margin-top: 16px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 680px;
+
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 13px;
+
+            border-bottom: 1px solid #f5e4eb;
+        }
+
+        th {
+            color: #7d5368;
+            font-size: 13px;
+
+            background: #fff9fb;
+        }
+
+        td {
+            font-size: 14px;
+        }
+
+        tbody tr:hover {
+            background: #fff8fb;
+        }
+
+        /* ========================================
+           ESTADOS DE ASISTENCIA
+        ======================================== */
+
+        .yes {
+            color: #147d58;
+            font-weight: 700;
+        }
+
+        .no {
+            color: #ad3851;
+            font-weight: 700;
+        }
+
+        /* ========================================
+           MENSAJES
+        ======================================== */
+
+        #status {
+            margin: 15px 0;
+            color: #7c4b63;
+        }
+
+        .warning {
+            display: none;
+
+            background: #fff3db;
+
+            border: 1px solid #f2d69b;
+            border-radius: 10px;
+
+            padding: 12px 16px;
+            margin-top: 15px;
+        }
+
+        .note {
+            margin-top: 14px;
+
+            font-size: 13px;
+            line-height: 1.7;
+
+            color: #80687a;
+        }
+
+        /* ========================================
+           RESPONSIVE
+        ======================================== */
+
+        @media (max-width: 750px) {
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .toolbar {
+                align-items: stretch;
+            }
+
+            .toolbar-actions {
+                width: 100%;
+            }
+
+            .toolbar-actions input {
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .top {
+                padding: 28px 20px;
+            }
+
+            main {
+                padding: 0 14px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .card strong {
+                font-size: 27px;
+            }
+
+            .panel {
+                padding: 15px;
+            }
+
+            .toolbar-actions {
+                flex-direction: column;
+            }
+
+            .toolbar-actions input,
+            .toolbar-actions button {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         ENCABEZADO
+    ======================================== -->
+
+    <header class="top">
+
+        <p>✦ Mis XV años ✦</p>
+
+        <h1>
+            Dalyla Alixtzel · Control de asistencia
+        </h1>
+
+        <p>
+            Panel privado de organización
+        </p>
+
+    </header>
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ======================================== -->
+
+    <main>
+
+        <!-- ESTADÍSTICAS -->
+
+        <section
+            class="stats"
+            aria-label="Estadísticas"
+        >
+
+            <div class="card">
+
+                <span>
+                    Personas confirmadas
+                </span>
+
+                <strong id="asistentes">
+                    —
+                </strong>
+
+            </div>
+
+            <div class="card">
+
+                <span>
+                    Confirmaciones recibidas
+                </span>
+
+                <strong id="confirmaciones">
+                    —
+                </strong>
+
+            </div>
+
+            <div class="card">
+
+                <span>
+                    Acompañantes
+                </span>
+
+                <strong id="acompanantes">
+                    —
+                </strong>
+
+            </div>
+
+            <div class="card">
+
+                <span>
+                    No asistirán
+                </span>
+
+                <strong id="noAsisten">
+                    —
+                </strong>
+
+            </div>
+
+        </section>
+
+        <!-- ADVERTENCIAS -->
+
+        <div
+            id="warning"
+            class="warning"
+            role="alert"
+        ></div>
+
+        <!-- ========================================
+             PANEL DE INVITADOS
+        ======================================== -->
+
+        <section class="panel">
+
+            <div class="toolbar">
+
+                <h2>
+                    Lista de confirmaciones
+                </h2>
+
+                <div class="toolbar-actions">
+
+                    <input
+                        id="buscar"
+                        type="search"
+                        placeholder="Buscar invitado"
+                        aria-label="Buscar invitado"
+                    >
+
+                    <button
+                        id="recargar"
+                        type="button"
+                    >
+                        Actualizar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- ESTADO DE CARGA -->
+
+            <p
+                id="status"
+                role="status"
+            >
+                Cargando datos…
+            </p>
+
+            <!-- TABLA DE CONFIRMACIONES -->
+
+            <div class="table-wrap">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Invitado</th>
+                            <th>Asiste</th>
+                            <th>Acompañantes</th>
+                            <th>Total</th>
+                            <th>Folio</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="filas">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- NOTA INFORMATIVA -->
+
+            <p class="note">
+
+                Las estadísticas suman todos los
+                registros.
+
+                Los nombres repetidos requieren
+                revisión manual, ya que dos personas
+                pueden compartir el mismo nombre.
+
+                No compartas la URL de este panel.
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
+
+    <script>
+
+        // ========================================
+        // VARIABLES GENERALES
+        // ========================================
+
+        let registros = [];
+
+        const $ = (id) =>
+            document.getElementById(id);
+
+
+        // ========================================
+        // CREAR CELDAS
+        // ========================================
+
+        function celda(tr, valor, clase = '') {
+
+            const td = document.createElement('td');
+
+            td.textContent = String(valor ?? '');
+
+            if (clase) {
+                td.className = clase;
+            }
+
+            tr.appendChild(td);
+        }
+
+
+        // ========================================
+        // MOSTRAR REGISTROS
+        // ========================================
+
+        function pintar() {
+
+            const q = $('buscar')
+                .value
+                .trim()
+                .toLocaleLowerCase('es');
+
+            const filtrados = registros.filter(r => {
+
+                const nombre = String(
+                    r.nombre ?? ''
+                ).toLocaleLowerCase('es');
+
+                return nombre.includes(q);
+
+            });
+
+            const cuerpo = $('filas');
+
+            cuerpo.replaceChildren();
+
+            filtrados.forEach(r => {
+
+                const tr = document.createElement('tr');
+
+                celda(tr, r.fecha);
+
+                celda(tr, r.nombre);
+
+                celda(
+                    tr,
+                    r.asistencia,
+                    r.asistencia === 'Sí'
+                        ? 'yes'
+                        : 'no'
+                );
+
+                celda(tr, r.acompanantes);
+
+                celda(tr, r.total);
+
+                celda(tr, r.folio);
+
+                cuerpo.appendChild(tr);
+
+            });
+
+            $('status').textContent =
+                filtrados.length +
+                ' registro(s) mostrado(s)';
+
+        }
+
+
+        // ========================================
+        // CARGAR DATOS DESDE GOOGLE APPS SCRIPT
+        // ========================================
+
+        function cargar() {
+
+            $('recargar').disabled = true;
+
+            $('status').textContent =
+                'Actualizando…';
+
+            if (
+                typeof google === 'undefined' ||
+                !google.script ||
+                !google.script.run
+            ) {
+
+                $('status').textContent =
+                    'Este panel debe ejecutarse ' +
+                    'desde Google Apps Script.';
+
+                $('recargar').disabled = false;
+
+                return;
+            }
+
+            google.script.run
+
+                .withSuccessHandler(data => {
+
+                    registros = Array.isArray(
+                        data.registros
+                    )
+                        ? data.registros
+                        : [];
+
+                    const resumen = data.resumen || {};
+
+                    Object.keys(resumen).forEach(k => {
+
+                        if ($(k)) {
+                            $(k).textContent =
+                                resumen[k];
+                        }
+
+                    });
+
+                    const n = Number(
+                        resumen.nombresRepetidos || 0
+                    );
+
+                    $('warning').style.display =
+                        n ? 'block' : 'none';
+
+                    $('warning').textContent = n
+                        ? `Atención: ${n} nombre(s) ` +
+                          `aparecen más de una vez. ` +
+                          `Revisa los registros antes ` +
+                          `de usar el total definitivo.`
+                        : '';
+
+                    $('recargar').disabled = false;
+
+                    pintar();
+
+                })
+
+                .withFailureHandler(error => {
+
+                    $('status').textContent =
+                        'Error: ' +
+                        (error.message || String(error));
+
+                    $('recargar').disabled = false;
+
+                })
+
+                .obtenerConfirmaciones();
+
+        }
+
+
+        // ========================================
+        // EVENTOS
+        // ========================================
+
+        $('buscar').addEventListener(
+            'input',
+            pintar
+        );
+
+        $('recargar').addEventListener(
+            'click',
+            cargar
+        );
+
+
+        // ========================================
+        // INICIAR PANEL
+        // ========================================
+
+        cargar();
+
+    </script>
+
+</body>
+</html>
